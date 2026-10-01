@@ -48,6 +48,11 @@ h2{font:700 19px/1.2 "Archivo",sans-serif;margin:0}
 .segb[aria-pressed="true"]{background:var(--verde);border-color:var(--verde);color:var(--paper)}
 .one-eq .eqtag{display:none} /* con un solo equipo a la vista, la etiqueta de equipo es redundante */
 .seg-hint{font-size:11px;color:var(--ink2);flex-basis:100%;margin-top:-2px}
+.pv-l{margin-left:6px}
+.pvsel{font:600 13px/1.2 "IBM Plex Sans",sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:20px;padding:7px 12px;max-width:300px;cursor:pointer}
+.pvsel:hover,.pvsel:focus{border-color:var(--verde);color:var(--verde)}
+.pv-wrap table.pvt{min-width:640px}
+.pv-wrap .subtot td{font-weight:700}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin:0 0 26px}
 .bloque{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
 .bloque h3{font:700 14px/1.2 "Archivo",sans-serif;letter-spacing:.06em;text-transform:uppercase;margin:0 0 12px;color:var(--ink2)}
@@ -141,14 +146,15 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <span class="seg-l">Ver equipo</span>
 <button class="segb" data-k="TODOS" aria-pressed="true">Todos</button>
 <button class="segb" data-k="JUAN ARMANDOLA" aria-pressed="false">Juan</button><button class="segb" data-k="FLORENCIA LIBERA" aria-pressed="false">Flor</button><button class="segb" data-k="LUCIA CEJAS (KAF)" aria-pressed="false">Luci</button><button class="segb" data-k="JOAQUIN (DUEÑO)" aria-pressed="false">Joaco</button><button class="segb" data-k="SIN SUPERVISOR / OTROS" aria-pressed="false">Sin supervisor</button>
-<span class="seg-hint">Podés marcar varios equipos a la vez: los objetivos y el avance se suman. «Todos» vuelve a la vista completa.</span>
+<span class="seg-l pv-l">· Proveedor</span><select id="pvsel" class="pvsel" title="Filtrar el tablero por proveedor"><option value="">Todos los proveedores</option><option value="100">Pepsico de Argentina SRL — $1.152,0 M</option><option value="211">GRUPO PEÑAFLOR SA — $1.093,5 M</option><option value="668">NEW PGA S. R. L. — $123,4 M</option><option value="233">GEORGALOS HNOS S A I C A — $118,5 M</option><option value="55">PILARES compañia alimenticia — $78,4 M</option><option value="513">LEDESMA SOCIEDAD ANONIMA AGRICOLA INDUSTRIAL — $73,4 M</option><option value="122">PILAGA S.A. — $31,2 M</option><option value="113">L3N S.A. — $16,9 M</option><option value="83">HILERET — $14,9 M</option><option value="349">ENTRENUTS SRL — $9,0 M</option><option value="512">GENERAL CEREALS SA — $3,3 M</option><option value="90">CABIAS S.R.L. — $3,0 M</option><option value="168">BIC ARGENTINA SOCIEDAD ANONIMA — $2,5 M</option><option value="517">CASTELL S. A. — $1,8 M</option><option value="133">LA DELICIA FELIPE FORT S A — $1,7 M</option><option value="95">BENEVIA S.R.L — $0,9 M</option><option value="77">LHERITIER — $0,7 M</option><option value="279">ARBANIT FELLOW — $0,2 M</option><option value="60">LAGO PUELO S.A. — $0,1 M</option><option value="225">LCB  S.A — $0,0 M</option></select>
+<span class="seg-hint">Podés marcar varios equipos a la vez: los objetivos y el avance se suman. «Todos» vuelve a la vista completa. Con un proveedor elegido, el tablero muestra la venta, el margen y la tendencia de ese proveedor (el objetivo y el premio son del total, por eso se ocultan).</span>
 </div>
 
 <div class="kpis">
 <div class="kpi"><div class="l" id="k-obj-l">Objetivo del mes</div><div class="v verde" id="k-obj">$2.297,1 M</div><div class="n" id="k-obj-n">+8,0% vs ago-26 · +15,0% vs sep-25</div></div>
-<div class="kpi"><div class="l">Venta acumulada</div><div class="v" id="k-venta">$2.725,6 M</div><div class="n" id="k-venta-n">cargada hasta el 30/09</div></div>
-<div class="kpi"><div class="l">Avance</div><div class="v" id="k-av">118,7%</div><div class="n">ritmo esperado a hoy: 100,0%</div></div>
-<div class="kpi"><div class="l">Tendencia de cierre</div><div class="v verde" id="k-tend">$2.725,6 M</div><div class="n" id="k-tend-n">por encima del objetivo</div></div>
+<div class="kpi"><div class="l" id="k-venta-l">Venta acumulada</div><div class="v" id="k-venta">$2.725,6 M</div><div class="n" id="k-venta-n">cargada hasta el 30/09</div></div>
+<div class="kpi"><div class="l" id="k-av-l">Avance</div><div class="v" id="k-av">118,7%</div><div class="n" id="k-av-n">ritmo esperado a hoy: 100,0%</div></div>
+<div class="kpi"><div class="l" id="k-tend-l">Tendencia de cierre</div><div class="v verde" id="k-tend">$2.725,6 M</div><div class="n" id="k-tend-n">por encima del objetivo</div></div>
 <div class="kpi"><div class="l" id="k-mg-l">Margen preventa</div><div class="v verde" id="k-mg">17,5%</div><div class="n" id="k-mg-n">17 rutas · el premio arranca en 17% y escala hasta 18,5%</div></div>
 </div>
 
@@ -780,8 +786,9 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <li>El factor estacional y el k de nivel por equipo son editables en el Excel del escritorio («Objetivo Septiembre 2026.xlsx»).</li>
 <li><strong>Segmentador:</strong> los botones de arriba filtran el tablero por supervisor. Al elegir uno, los cinco KPIs, la fórmula del objetivo, el ranking del mes y las tablas quedan sólo con su equipo — el objetivo de cada equipo es <strong>su propio agosto × 1,08</strong>, así que los cinco suman el total. La elección queda guardada en el navegador de cada uno. Joaquín no participa del ranking del premio, por eso en su vista no aparece.</li>
 <li><strong>Desglose:</strong> tocá el nombre de una vendedora en las tablas por supervisor para abrir el detalle de lo que vendió en el mes, por proveedor, por cliente y por artículo. Las tres vistas suman exactamente su venta del mes; se pueden buscar, ordenar por cualquier columna y los artículos filtrar por proveedor.</li>
+<li><strong>Filtro por proveedor:</strong> el selector de arriba muestra el tablero con la venta de un solo proveedor: ranking por venta, participación en la venta de cada vendedora, margen y tendencia de ese proveedor, combinable con los botones de equipo. El objetivo y el premio son del total del mes (no hay objetivo por proveedor), por eso en esa vista se ocultan.</li>
 </ul>
-<div class="gen">Actualizado el 30/9/2026, 15:34 · generado desde la API Gescom</div>
+<div class="gen">Actualizado el 1/10/2026, 17:15 · generado desde la API Gescom</div>
 </div>
 </div>
 <script>window.__SEG={"d":{"TODOS":{"obj":2297100000,"ago":2127201062.4295049,"venta":2725616003.71171,"n":2252575209.6790986,"c":2010761517.8752432,"pn":1082163425.4206,"pc":892763024.1702197,"npv":17,"nv":28,"sep25":1997494543.5673466,"nom":"del equipo"},"JUAN ARMANDOLA":{"obj":842200000,"ago":779943791.4766791,"venta":775981274.2674356,"n":641306838.2375499,"c":531048798.22283906,"pn":641306838.2375499,"pc":531048798.22283906,"npv":10,"nv":10,"sep25":0,"nom":"de Juan"},"FLORENCIA LIBERA":{"obj":573400000,"ago":530928051.2094686,"venta":533436470.4914906,"n":440856587.18305016,"c":361714225.9473808,"pn":440856587.18305016,"pc":361714225.9473808,"npv":7,"nv":7,"sep25":0,"nom":"de Flor"},"LUCIA CEJAS (KAF)":{"obj":365400000,"ago":338351099.4025193,"venta":356456161.38472855,"n":294591868.91299915,"c":269705858.57070637,"pn":0,"pc":0,"npv":0,"nv":5,"sep25":0,"nom":"de Luci"},"JOAQUIN (DUEÑO)":{"obj":160400000,"ago":148498773.85463998,"venta":470104319.2472,"n":388515966.31999993,"c":385218251.315,"pn":0,"pc":0,"npv":0,"nv":1,"sep25":0,"nom":"de Joaco"},"SIN SUPERVISOR / OTROS":{"obj":355700000,"ago":329479346.4861983,"venta":589637778.3208548,"n":487303949.02549994,"c":463074383.81931734,"pn":0,"pc":0,"npv":0,"nv":5,"sep25":0,"nom":"de los canales sin supervisor"}},"ht":22,"htr":22,"mgMin":0.17,"mgLbl":"17","topeLbl":"18,5%","hayAv":true,"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"}};</script>
@@ -854,6 +861,8 @@ function apply(sel){
  });
  cur=sel;
  try{localStorage.setItem(KEY,JSON.stringify(sel));}catch(e){}
+ window.__segSel=sel;
+ if(window.__pvRefresh) window.__pvRefresh(); // el filtro de proveedor se recalcula sobre los equipos visibles
 }
 // mantiene el orden de los botones, así "Juan + Flor" nunca aparece como "Flor + Juan"
 function orden(a){return S.eqs.filter(function(k){return a.indexOf(k)>=0;});}
@@ -868,6 +877,8 @@ seg.addEventListener('click',function(e){
  if(!sel.length) sel=S.eqs.slice(); // sacar el último equipo equivale a volver a "Todos"
  apply(sel);
 });
+window.__segApply=apply;   // el filtro de proveedor restaura la vista de equipos con esto
+window.__segSel=cur;
 var ini=null;
 try{
  var g=JSON.parse(localStorage.getItem(KEY)||'null');
@@ -1010,6 +1021,145 @@ document.addEventListener('change',function(e){
  var panel=e.target.closest?e.target.closest('.dpanel'):null; if(!panel) return;
  if(e.target.classList.contains('dsel')){var st=st0(panel.getAttribute('data-cod'));st.p=e.target.value;st.all=false;render(panel);}
 });
+})();
+</script>
+<script>
+(function(){
+var D=window.__DD, S=window.__SEG;
+var sel=document.getElementById('pvsel'); if(!D||!sel) return;
+var KEY='objsep26-pv';
+var NOMP={"55":"PILARES compañia alimenticia","60":"LAGO PUELO S.A.","77":"LHERITIER","83":"HILERET","90":"CABIAS S.R.L.","95":"BENEVIA S.R.L","100":"Pepsico de Argentina SRL","113":"L3N S.A.","122":"PILAGA S.A.","133":"LA DELICIA FELIPE FORT S A","168":"BIC ARGENTINA SOCIEDAD ANONIMA","211":"GRUPO PEÑAFLOR SA","225":"LCB  S.A","233":"GEORGALOS HNOS S A I C A","279":"ARBANIT FELLOW","349":"ENTRENUTS SRL","512":"GENERAL CEREALS SA","513":"LEDESMA SOCIEDAD ANONIMA AGRICOLA INDUSTRIAL","517":"CASTELL S. A.","668":"NEW PGA S. R. L."};
+// estructura de equipos desde el propio DOM (sin payload extra): sección -> códigos de sus filas
+var SECS=[];
+document.querySelectorAll('section.equipo[data-eq]').forEach(function(s){
+ var eq=s.getAttribute('data-eq'); if(eq==='*') return;
+ var codes=[]; s.querySelectorAll('tr.vrow td.cod').forEach(function(td){codes.push(td.textContent.trim());});
+ SECS.push({eq:eq,el:s,codes:codes});
+});
+var PREVSET={};
+SECS.forEach(function(s){ if(s.eq==='JUAN ARMANDOLA'||s.eq==='FLORENCIA LIBERA') s.codes.forEach(function(c){PREVSET[c]=1;}); });
+var RANK=document.getElementById('rank-sec');
+var FORMULA=document.querySelector('.formula');
+var PBOX=document.getElementById('premio-box');
+var AVISO=RANK?RANK.querySelector(':scope > .aviso'):null;
+function pl(n,d){return n.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d});}
+function $$M(n){return '$'+pl(n/1e6,1)+' M';}
+function pc(n){return pl(n*100,1)+'%';}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function corto(s){return s.length>26?s.slice(0,25)+'…':s;}
+function fila(cod,p){var raw=(D.det[cod]||{}).prov||[];for(var i=0;i<raw.length;i++)if(String(raw[i][0])===p)return raw[i];return null;}
+function txt(id,s){var e=document.getElementById(id); if(e)e.textContent=s;}
+function vrd(id,on){var e=document.getElementById(id); if(e)e.classList.toggle('verde',!!on);}
+// textos originales de los KPIs que este filtro pisa (para restaurarlos al salir)
+var orig={};
+['k-venta-l','k-venta-n','k-av-l','k-av-n','k-tend-l','k-tend-n','k-mg-l','k-mg-n'].forEach(function(id){
+ var e=document.getElementById(id); orig[id]=e?e.textContent:'';
+});
+function wrapDe(secEl){
+ var w=secEl.querySelector(':scope > .pv-wrap');
+ if(!w){w=document.createElement('div');w.className='pv-wrap';w.hidden=true;secEl.appendChild(w);}
+ return w;
+}
+function selEqs(){return (window.__segSel&&window.__segSel.length)?window.__segSel:(S?S.eqs.slice():SECS.map(function(s){return s.eq;}));}
+var cur='';
+function aplicar(p){
+ cur=p;
+ var nomP=NOMP[p]||p, nomC=corto(nomP);
+ var eqs=selEqs();
+ // tablas por equipo (se renderizan todas; la visibilidad por equipo la maneja el segmentador)
+ SECS.forEach(function(s){
+  var tw=s.el.querySelector(':scope > .twrap'); if(tw) tw.hidden=true;
+  var rows=s.codes.map(function(cod){
+   var r=fila(cod,p), v=r?r[1]:0, n=r?r[2]:0, c=r?r[3]:0;
+   var tv=D.tv[cod]||0, mg=n?(n-c)/n:null;
+   return {cod:cod,nom:(D.meta[cod]||{}).n||cod,v:v,sh:tv?v/tv:0,mg:mg,tend:D.htr?v*D.ht/D.htr:0};
+  });
+  var tot=rows.reduce(function(a,r){return {v:a.v+r.v,tv:a.tv+(D.tv[r.cod]||0)};},{v:0,tv:0});
+  var nn=0,cc=0; s.codes.forEach(function(cod){var r=fila(cod,p); if(r){nn+=r[2];cc+=r[3];}});
+  var h='<div class="twrap"><table class="pvt"><thead><tr><th></th><th>Vendedor</th><th class="num">Venta '+esc(nomC)+'</th><th class="num">% de su venta</th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead><tbody>';
+  rows.forEach(function(r){
+   h+='<tr><td class="cod">'+esc(r.cod)+'</td><td class="nom">'+esc(r.nom)+'</td><td class="num bold'+(r.v?'':' dim')+'">'+$$M(r.v)+'</td><td class="num dim">'+(r.v?pc(r.sh):'—')+'</td><td class="num">'+(r.mg==null?'—':pc(r.mg))+'</td><td class="num dim">'+$$M(r.tend)+'</td></tr>';
+  });
+  h+='<tr class="subtot"><td></td><td>Total</td><td class="num">'+$$M(tot.v)+'</td><td class="num">'+(tot.tv?pc(tot.v/tot.tv):'—')+'</td><td class="num">'+(nn?pc((nn-cc)/nn):'—')+'</td><td class="num">'+$$M(D.htr?tot.v*D.ht/D.htr:0)+'</td></tr>';
+  h+='</tbody></table></div>';
+  var w=wrapDe(s.el); w.innerHTML=h; w.hidden=false;
+ });
+ // ranking por venta del proveedor (equipos seleccionados; Joaquín afuera como en el original)
+ if(RANK){
+  var tw=RANK.querySelector(':scope > .twrap'); if(tw) tw.hidden=true;
+  if(PBOX) PBOX.hidden=true;
+  if(AVISO) AVISO.hidden=true;
+  var rk=[];
+  SECS.forEach(function(s){
+   if(s.eq==='JOAQUIN (DUEÑO)') return;
+   if(eqs.indexOf(s.eq)<0) return;
+   s.codes.forEach(function(cod){
+    var r=fila(cod,p); if(!r||!r[1]) return;
+    var tag=(S&&S.lbl&&S.lbl[s.eq])||s.eq;
+    rk.push({cod:cod,nom:(D.meta[cod]||{}).n||cod,tag:tag,v:r[1],n:r[2],c:r[3]});
+   });
+  });
+  rk.sort(function(a,b){return b.v-a.v;});
+  var totR=rk.reduce(function(a,r){return a+r.v;},0), max=rk.length?rk[0].v:1;
+  var h='<div class="twrap"><table class="rank pvt"><thead><tr><th>#</th><th>Vendedor</th><th class="num">Venta '+esc(nomC)+'</th><th class="num">% del proveedor</th><th style="min-width:160px"></th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead><tbody>';
+  rk.forEach(function(r,i){
+   var mg=r.n?(r.n-r.c)/r.n:null;
+   h+='<tr><td class="cod"><span class="pos">'+(i+1)+'</span></td><td class="nom">'+esc(r.nom)+' <span class="eqtag">'+esc(r.tag)+'</span></td><td class="num bold">'+$$M(r.v)+'</td><td class="num dim">'+(totR?pc(r.v/totR):'—')+'</td><td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:'+Math.max(1,(r.v/max*100)).toFixed(1)+'%"></div></div></td><td class="num">'+(mg==null?'—':pc(mg))+'</td><td class="num dim">'+$$M(D.htr?r.v*D.ht/D.htr:0)+'</td></tr>';
+  });
+  h+='</tbody></table></div><p class="aviso">Ranking por venta de '+esc(nomP)+' en los equipos elegidos. El objetivo y el premio son del total del mes, por eso no se muestran en esta vista. La barra compara contra la primera del ranking.</p>';
+  var w=wrapDe(RANK); w.innerHTML=h; w.hidden=false;
+ }
+ if(FORMULA) FORMULA.hidden=true;
+ // KPIs: venta / participación / tendencia / margen preventa del proveedor
+ var vP=0,tvSel=0,pn=0,pcst=0,nR=0;
+ SECS.forEach(function(s){
+  if(eqs.indexOf(s.eq)<0) return;
+  s.codes.forEach(function(cod){
+   var r=fila(cod,p);
+   vP+=r?r[1]:0; tvSel+=D.tv[cod]||0;
+   if(PREVSET[cod]){nR++; if(r){pn+=r[2];pcst+=r[3];}}
+  });
+ });
+ txt('k-venta-l','Venta '+nomC);
+ txt('k-venta',$$M(vP));
+ txt('k-venta-n','vendida hasta el '+D.hasta);
+ txt('k-av-l','Participación');
+ txt('k-av',tvSel?pc(vP/tvSel):'—');
+ txt('k-av-n','sobre '+$$M(tvSel)+' de venta total de la selección');
+ txt('k-tend-l','Tendencia '+nomC);
+ txt('k-tend',$$M(D.htr?vP*D.ht/D.htr:0));
+ txt('k-tend-n','a ritmo actual');
+ vrd('k-tend',false);
+ txt('k-mg-l','Margen preventa');
+ txt('k-mg',pn?pc((pn-pcst)/pn):'—');
+ txt('k-mg-n',nomC+' · '+nR+' rutas de preventa en la selección');
+ vrd('k-mg',false);
+}
+function restaurar(){
+ cur='';
+ SECS.forEach(function(s){
+  var tw=s.el.querySelector(':scope > .twrap'); if(tw) tw.hidden=false;
+  var w=s.el.querySelector(':scope > .pv-wrap'); if(w) w.hidden=true;
+ });
+ if(RANK){
+  var tw=RANK.querySelector(':scope > .twrap'); if(tw) tw.hidden=false;
+  if(AVISO) AVISO.hidden=false;
+  var w=RANK.querySelector(':scope > .pv-wrap'); if(w) w.hidden=true;
+ }
+ if(FORMULA) FORMULA.hidden=false;
+ Object.keys(orig).forEach(function(id){txt(id,orig[id]);});
+ if(window.__segApply) window.__segApply(selEqs()); // repone números, colores y el banner del premio
+}
+window.__pvRefresh=function(){ if(cur) aplicar(cur); };
+sel.addEventListener('change',function(){
+ var p=sel.value;
+ if(p) aplicar(p); else restaurar();
+ try{localStorage.setItem(KEY,p);}catch(e){}
+});
+try{
+ var g=localStorage.getItem(KEY);
+ if(g&&NOMP[g]){sel.value=g;aplicar(g);}
+}catch(e){}
 })();
 </script>
 </body>
