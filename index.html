@@ -33,7 +33,7 @@ h1{font:800 clamp(26px,4.5vw,38px)/1.1 "Archivo",sans-serif;margin:8px 0 6px;tex
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:26px 0 8px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
 .kpi .l{font:600 11px/1.2 "Archivo",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
-.kpi .v{font:800 26px/1.15 "Archivo",sans-serif;margin-top:6px;font-variant-numeric:tabular-nums}
+.kpi .v{font:800 21px/1.15 "Archivo",sans-serif;margin-top:6px;font-variant-numeric:tabular-nums}
 .kpi .v.verde{color:var(--verde)}
 .kpi .n{font-size:12px;color:var(--ink2);margin-top:3px}
 .formula{display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:var(--verde-soft);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:14px 0 26px;font-variant-numeric:tabular-nums}
@@ -153,19 +153,19 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <span class="seg-l">Ver equipo</span>
 <button class="segb" data-k="TODOS" aria-pressed="true">Todos</button>
 <button class="segb" data-k="JUAN ARMANDOLA" aria-pressed="false">Juan</button><button class="segb" data-k="FLORENCIA LIBERA" aria-pressed="false">Flor</button><button class="segb" data-k="LUCIA CEJAS (KAF)" aria-pressed="false">Luci</button><button class="segb" data-k="JOAQUIN (DUEÑO)" aria-pressed="false">Joaco</button><button class="segb" data-k="SIN SUPERVISOR / OTROS" aria-pressed="false">Sin supervisor</button>
-<span class="seg-l pv-l">· Proveedor</span><select id="pvsel" class="pvsel" title="Filtrar el tablero por proveedor"><option value="">Todos los proveedores</option><option value="211">GRUPO PEÑAFLOR SA — $471,0 M</option><option value="100">Pepsico de Argentina SRL — $335,6 M</option><option value="233">GEORGALOS HNOS S A I C A — $31,8 M</option><option value="668">NEW PGA S. R. L. — $28,7 M</option><option value="55">PILARES compañia alimenticia — $26,2 M</option><option value="122">PILAGA S.A. — $25,0 M</option><option value="513">LEDESMA SOCIEDAD ANONIMA AGRICOLA INDUSTRIAL — $8,7 M</option><option value="113">L3N S.A. — $4,9 M</option><option value="83">HILERET — $4,0 M</option><option value="349">ENTRENUTS SRL — $1,7 M</option><option value="77">LHERITIER — $1,0 M</option><option value="225">LCB  S.A — $0,8 M</option><option value="168">BIC ARGENTINA SOCIEDAD ANONIMA — $0,7 M</option><option value="512">GENERAL CEREALS SA — $0,5 M</option><option value="517">CASTELL S. A. — $0,4 M</option><option value="90">CABIAS S.R.L. — $0,3 M</option><option value="95">BENEVIA S.R.L — $0,2 M</option><option value="279">ARBANIT FELLOW — $0,1 M</option><option value="60">LAGO PUELO S.A. — $0,1 M</option><option value="133">LA DELICIA FELIPE FORT S A — $0,1 M</option></select>
+<span class="seg-l pv-l">· Proveedor</span><select id="pvsel" class="pvsel" title="Filtrar el tablero por proveedor"><option value="">Todos los proveedores</option><option value="211">GRUPO PEÑAFLOR SA — $471.029.713</option><option value="100">Pepsico de Argentina SRL — $335.565.604</option><option value="233">GEORGALOS HNOS S A I C A — $31.756.688</option><option value="668">NEW PGA S. R. L. — $28.731.268</option><option value="55">PILARES compañia alimenticia — $26.244.005</option><option value="122">PILAGA S.A. — $25.037.920</option><option value="513">LEDESMA SOCIEDAD ANONIMA AGRICOLA INDUSTRIAL — $8.681.568</option><option value="113">L3N S.A. — $4.857.605</option><option value="83">HILERET — $4.036.873</option><option value="349">ENTRENUTS SRL — $1.710.474</option><option value="77">LHERITIER — $973.805</option><option value="225">LCB  S.A — $805.307</option><option value="168">BIC ARGENTINA SOCIEDAD ANONIMA — $717.377</option><option value="512">GENERAL CEREALS SA — $494.765</option><option value="517">CASTELL S. A. — $380.170</option><option value="90">CABIAS S.R.L. — $328.827</option><option value="95">BENEVIA S.R.L — $249.137</option><option value="279">ARBANIT FELLOW — $121.539</option><option value="60">LAGO PUELO S.A. — $107.109</option><option value="133">LA DELICIA FELIPE FORT S A — $84.960</option></select>
 <span class="seg-hint">Podés marcar varios equipos a la vez: los objetivos y el avance se suman. «Todos» vuelve a la vista completa. Con un proveedor elegido, el tablero muestra la venta, el margen y la tendencia de ese proveedor (el objetivo y el premio son del total, por eso se ocultan).</span>
 </div>
 
 <div class="kpis">
-<div class="kpi"><div class="l" id="k-obj-l">Objetivo del mes</div><div class="v verde" id="k-obj">$2.904,3 M</div><div class="n" id="k-obj-n">+6,0% vs venta real de sep-26 ($2.738,8 M)</div></div>
-<div class="kpi"><div class="l" id="k-venta-l">Venta acumulada</div><div class="v" id="k-venta">$941,9 M</div><div class="n" id="k-venta-n">cargada hasta el 09/10</div></div>
+<div class="kpi"><div class="l" id="k-obj-l">Objetivo del mes</div><div class="v verde" id="k-obj">$2.904.300.000</div><div class="n" id="k-obj-n">+6,0% vs venta real de sep-26 ($2.738.808.218)</div></div>
+<div class="kpi"><div class="l" id="k-venta-l">Venta acumulada</div><div class="v" id="k-venta">$941.914.714</div><div class="n" id="k-venta-n">cargada hasta el 09/10</div></div>
 <div class="kpi"><div class="l" id="k-av-l">Avance</div><div class="v" id="k-av">32,4%</div><div class="n" id="k-av-n">ritmo esperado a hoy: 31,8%</div></div>
-<div class="kpi"><div class="l" id="k-tend-l">Tendencia de cierre</div><div class="v verde" id="k-tend">$2.960,3 M</div><div class="n" id="k-tend-n">por encima del objetivo</div></div>
+<div class="kpi"><div class="l" id="k-tend-l">Tendencia de cierre</div><div class="v verde" id="k-tend">$2.960.303.388</div><div class="n" id="k-tend-n">por encima del objetivo</div></div>
 <div class="kpi"><div class="l" id="k-mg-l">Margen preventa</div><div class="v verde" id="k-mg">17,6%</div><div class="n" id="k-mg-n">17 rutas · el premio arranca en 17% y escala hasta 18,5%</div></div>
 </div>
 
-<div class="formula"><span id="f-nom">Septiembre del equipo</span><b id="f-ago">$2.738,8 M</b><span class="op">×</span><span>crecimiento objetivo</span><b id="f-k">1,06</b><span class="op">=</span><span>objetivo</span><b id="f-obj">$2.904,3 M</b><span class="op">·</span><span>cada vendedora crece 7,0% sobre su propia venta de septiembre, así los equipos y el total cierran solos</span></div>
+<div class="formula"><span id="f-nom">Septiembre del equipo</span><b id="f-ago">$2.738.808.218</b><span class="op">×</span><span>crecimiento objetivo</span><b id="f-k">1,06</b><span class="op">=</span><span>objetivo</span><b id="f-obj">$2.904.300.000</b><span class="op">·</span><span>cada vendedora crece 7,0% sobre su propia venta de septiembre, así los equipos y el total cierran solos</span></div>
 
 <section class="equipo" id="rank-sec" data-eq="*">
 <div class="eq-head"><h2>Avance del mes</h2><span class="eq-nota">venta cargada hasta el 09/10 · día hábil 7 de 22 · ritmo esperado a hoy: 31,8% <span class="bartick-demo"></span></span></div>
@@ -177,568 +177,568 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tbody><tr data-eq="SIN SUPERVISOR / OTROS">
 <td class="cod"><span class="pos">1</span></td>
 <td class="nom">Martin Di Giorno <span class="eqtag">Otros</span></td>
-<td class="num">$469,3 M</td>
-<td class="num">$226,7 M</td>
+<td class="num">$469.300.000</td>
+<td class="num">$226.664.207</td>
 <td class="num bold">48,3%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:48.3%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">0,6%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num pos bold">$712,4 M</td>
+<td class="num pos bold">$712.373.222</td>
 <td><span class="pill ok">En ritmo</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod"><span class="pos">2</span></td>
 <td class="nom">Sofia Cativiela <span class="eqtag">Flor</span></td>
-<td class="num">$120,3 M</td>
-<td class="num">$39,4 M</td>
+<td class="num">$120.300.000</td>
+<td class="num">$39.410.433</td>
 <td class="num bold">32,8%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:32.8%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold amb">16,7%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">+0,3 pts → $100.000</span></td>
-<td class="num pos bold">$123,9 M</td>
+<td class="num pos bold">$123.861.360</td>
 <td><span class="pill ok">En ritmo</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod">🏆<span class="pos">3</span></td>
 <td class="nom">Ivana Castillo <span class="eqtag">Flor</span></td>
-<td class="num">$73,3 M</td>
-<td class="num">$23,4 M</td>
+<td class="num">$73.300.000</td>
+<td class="num">$23.356.362</td>
 <td class="num bold">31,9%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:31.9%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">18,7%</td>
 <td class="num"><span class="bold pos">$220.000</span><span class="pnota">tope de la escala</span></td>
-<td class="num pos bold">$73,4 M</td>
+<td class="num pos bold">$73.405.708</td>
 <td><span class="pill ok">En ritmo</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod"><span class="pos">4</span></td>
 <td class="nom">Carolina Echeverria <span class="eqtag">Flor</span></td>
-<td class="num">$77,9 M</td>
-<td class="num">$24,7 M</td>
+<td class="num">$77.900.000</td>
+<td class="num">$24.716.123</td>
 <td class="num bold">31,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:31.7%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">17,5%</td>
 <td class="num"><span class="bold dim">$150.000</span><span class="pnota">+0,5 pts → $200.000</span></td>
-<td class="num dim">$77,7 M</td>
+<td class="num dim">$77.679.243</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="LUCIA CEJAS (KAF)">
 <td class="cod"><span class="pos">5</span></td>
 <td class="nom">Kaf Gaby Peralta <span class="eqtag">Luci</span></td>
-<td class="num">$102,4 M</td>
-<td class="num">$32,1 M</td>
+<td class="num">$102.400.000</td>
+<td class="num">$32.122.051</td>
 <td class="num bold">31,4%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:31.4%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">7,1%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num dim">$101,0 M</td>
+<td class="num dim">$100.955.019</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">6</span></td>
 <td class="nom">Sofia Aquino <span class="eqtag">Juan</span></td>
-<td class="num">$84,5 M</td>
-<td class="num">$26,4 M</td>
+<td class="num">$84.500.000</td>
+<td class="num">$26.358.996</td>
 <td class="num bold">31,2%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:31.2%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold amb">16,3%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">+0,7 pts → $100.000</span></td>
-<td class="num dim">$82,8 M</td>
+<td class="num dim">$82.842.559</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">7</span></td>
 <td class="nom">Angela Echeverria <span class="eqtag">Juan</span></td>
-<td class="num">$114,3 M</td>
-<td class="num">$35,4 M</td>
+<td class="num">$114.300.000</td>
+<td class="num">$35.409.128</td>
 <td class="num bold">31,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:31.0%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">14,7%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">+2,3 pts → $100.000</span></td>
-<td class="num dim">$111,3 M</td>
+<td class="num dim">$111.285.830</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="LUCIA CEJAS (KAF)">
 <td class="cod"><span class="pos">8</span></td>
 <td class="nom">Kaf Maria Jose Minio <span class="eqtag">Luci</span></td>
-<td class="num">$83,3 M</td>
-<td class="num">$24,2 M</td>
+<td class="num">$83.300.000</td>
+<td class="num">$24.221.378</td>
 <td class="num bold">29,1%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:29.1%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">7,3%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num dim">$76,1 M</td>
+<td class="num dim">$76.124.331</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod"><span class="pos">9</span></td>
 <td class="nom">Natalia Polito <span class="eqtag">Flor</span></td>
-<td class="num">$63,0 M</td>
-<td class="num">$18,3 M</td>
+<td class="num">$63.000.000</td>
+<td class="num">$18.305.125</td>
 <td class="num bold">29,1%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:29.1%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">17,8%</td>
 <td class="num"><span class="bold dim">$150.000</span><span class="pnota">+0,2 pts → $200.000</span></td>
-<td class="num dim">$57,5 M</td>
+<td class="num dim">$57.530.394</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">10</span></td>
 <td class="nom">Rocio More <span class="eqtag">Juan</span></td>
-<td class="num">$72,7 M</td>
-<td class="num">$21,1 M</td>
+<td class="num">$72.700.000</td>
+<td class="num">$21.104.676</td>
 <td class="num bold">29,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:29.0%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">18,1%</td>
 <td class="num"><span class="bold dim">$200.000</span><span class="pnota">+0,4 pts → $220.000</span></td>
-<td class="num dim">$66,3 M</td>
+<td class="num dim">$66.328.982</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">11</span></td>
 <td class="nom">Pilar Fernandez <span class="eqtag">Juan</span></td>
-<td class="num">$68,1 M</td>
-<td class="num">$19,3 M</td>
+<td class="num">$68.100.000</td>
+<td class="num">$19.340.163</td>
 <td class="num bold">28,4%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:28.4%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">19,3%</td>
 <td class="num"><span class="bold dim">$220.000</span><span class="pnota">tope de la escala</span></td>
-<td class="num neg">$60,8 M</td>
+<td class="num neg">$60.783.368</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">12</span></td>
 <td class="nom">Silvia Boutet <span class="eqtag">Juan</span></td>
-<td class="num">$83,9 M</td>
-<td class="num">$23,8 M</td>
+<td class="num">$83.900.000</td>
+<td class="num">$23.810.756</td>
 <td class="num bold">28,4%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:28.4%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">17,9%</td>
 <td class="num"><span class="bold dim">$150.000</span><span class="pnota">+0,1 pts → $200.000</span></td>
-<td class="num neg">$74,8 M</td>
+<td class="num neg">$74.833.804</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="LUCIA CEJAS (KAF)">
 <td class="cod"><span class="pos">13</span></td>
 <td class="nom">Kaf Daniel Sanchez <span class="eqtag">Luci</span></td>
-<td class="num">$47,8 M</td>
-<td class="num">$13,2 M</td>
+<td class="num">$47.800.000</td>
+<td class="num">$13.246.707</td>
 <td class="num bold">27,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:27.7%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">5,3%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num neg">$41,6 M</td>
+<td class="num neg">$41.632.509</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">14</span></td>
 <td class="nom">Fiama Jara <span class="eqtag">Juan</span></td>
-<td class="num">$96,8 M</td>
-<td class="num">$26,8 M</td>
+<td class="num">$96.800.000</td>
+<td class="num">$26.797.234</td>
 <td class="num bold">27,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:27.7%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">17,9%</td>
 <td class="num"><span class="bold dim">$150.000</span><span class="pnota">+0,1 pts → $200.000</span></td>
-<td class="num neg">$84,2 M</td>
+<td class="num neg">$84.219.878</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">15</span></td>
 <td class="nom">Samanta Machado <span class="eqtag">Juan</span></td>
-<td class="num">$82,9 M</td>
-<td class="num">$22,2 M</td>
+<td class="num">$82.900.000</td>
+<td class="num">$22.249.595</td>
 <td class="num bold">26,8%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:26.8%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold amb">16,3%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">+0,7 pts → $100.000</span></td>
-<td class="num neg">$69,9 M</td>
+<td class="num neg">$69.927.297</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod"><span class="pos">16</span></td>
 <td class="nom">Maria Victoria Zerda <span class="eqtag">Flor</span></td>
-<td class="num">$71,8 M</td>
-<td class="num">$19,1 M</td>
+<td class="num">$71.800.000</td>
+<td class="num">$19.131.289</td>
 <td class="num bold">26,6%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:26.6%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">18,4%</td>
 <td class="num"><span class="bold dim">$200.000</span><span class="pnota">+0,1 pts → $220.000</span></td>
-<td class="num neg">$60,1 M</td>
+<td class="num neg">$60.126.910</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">17</span></td>
 <td class="nom">Magali Bader <span class="eqtag">Juan</span></td>
-<td class="num">$75,8 M</td>
-<td class="num">$19,5 M</td>
+<td class="num">$75.800.000</td>
+<td class="num">$19.511.832</td>
 <td class="num bold">25,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:25.7%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">20,0%</td>
 <td class="num"><span class="bold dim">$220.000</span><span class="pnota">tope de la escala</span></td>
-<td class="num neg">$61,3 M</td>
+<td class="num neg">$61.322.902</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod"><span class="pos">18</span></td>
 <td class="nom">Nahuel Baeta <span class="eqtag">Flor</span></td>
-<td class="num">$70,6 M</td>
-<td class="num">$18,2 M</td>
+<td class="num">$70.600.000</td>
+<td class="num">$18.167.241</td>
 <td class="num bold">25,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:25.7%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">18,0%</td>
 <td class="num"><span class="bold dim">$200.000</span><span class="pnota">+0,5 pts → $220.000</span></td>
-<td class="num neg">$57,1 M</td>
+<td class="num neg">$57.097.044</td>
 <td><span class="pill warn">Atrás</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">19</span></td>
 <td class="nom">Valentina Gomez <span class="eqtag">Juan</span></td>
-<td class="num">$69,2 M</td>
-<td class="num">$17,3 M</td>
+<td class="num">$69.200.000</td>
+<td class="num">$17.287.752</td>
 <td class="num bold">25,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:25.0%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">19,0%</td>
 <td class="num"><span class="bold dim">$220.000</span><span class="pnota">tope de la escala</span></td>
-<td class="num neg">$54,3 M</td>
+<td class="num neg">$54.332.936</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="FLORENCIA LIBERA">
 <td class="cod"><span class="pos">20</span></td>
 <td class="nom">Aylen Blanco <span class="eqtag">Flor</span></td>
-<td class="num">$93,1 M</td>
-<td class="num">$23,1 M</td>
+<td class="num">$93.100.000</td>
+<td class="num">$23.099.642</td>
 <td class="num bold">24,8%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:24.8%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">17,8%</td>
 <td class="num"><span class="bold dim">$150.000</span><span class="pnota">+0,2 pts → $200.000</span></td>
-<td class="num neg">$72,6 M</td>
+<td class="num neg">$72.598.875</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="LUCIA CEJAS (KAF)">
 <td class="cod"><span class="pos">21</span></td>
 <td class="nom">Kaf Romina Merello <span class="eqtag">Luci</span></td>
-<td class="num">$135,0 M</td>
-<td class="num">$30,2 M</td>
+<td class="num">$135.000.000</td>
+<td class="num">$30.210.853</td>
 <td class="num bold">22,4%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:22.4%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">4,1%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num neg">$94,9 M</td>
+<td class="num neg">$94.948.395</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="SIN SUPERVISOR / OTROS">
 <td class="cod"><span class="pos">22</span></td>
 <td class="nom">Vendedor 21 <span class="eqtag">Otros</span></td>
-<td class="num">$131,2 M</td>
-<td class="num">$28,4 M</td>
+<td class="num">$131.200.000</td>
+<td class="num">$28.389.951</td>
 <td class="num bold">21,6%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:21.6%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">15,5%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num neg">$89,2 M</td>
+<td class="num neg">$89.225.561</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="JUAN ARMANDOLA">
 <td class="cod"><span class="pos">23</span></td>
 <td class="nom">Lorena Escobar <span class="eqtag">Juan</span></td>
-<td class="num">$71,8 M</td>
-<td class="num">$15,0 M</td>
+<td class="num">$71.800.000</td>
+<td class="num">$15.020.923</td>
 <td class="num bold">20,9%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:20.9%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">19,4%</td>
 <td class="num"><span class="bold dim">$220.000</span><span class="pnota">tope de la escala</span></td>
-<td class="num neg">$47,2 M</td>
+<td class="num neg">$47.208.614</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="LUCIA CEJAS (KAF)">
 <td class="cod"><span class="pos">24</span></td>
 <td class="nom">Vendedor 28 Kaf <span class="eqtag">Luci</span></td>
-<td class="num">$11,8 M</td>
-<td class="num">$1,7 M</td>
+<td class="num">$11.800.000</td>
+<td class="num">$1.692.939</td>
 <td class="num bold">14,3%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:14.3%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold pos">20,8%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num neg">$5,3 M</td>
+<td class="num neg">$5.320.666</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="SIN SUPERVISOR / OTROS">
 <td class="cod"><span class="pos">25</span></td>
 <td class="nom">Deposito <span class="eqtag">Otros</span></td>
-<td class="num">$7,2 M</td>
-<td class="num">$0,7 M</td>
+<td class="num">$7.200.000</td>
+<td class="num">$698.386</td>
 <td class="num bold">9,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:9.7%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">9,7%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num neg">$2,2 M</td>
+<td class="num neg">$2.194.928</td>
 <td><span class="pill bad">Lejos</span></td></tr>
 <tr data-eq="SIN SUPERVISOR / OTROS">
 <td class="cod"><span class="pos">26</span></td>
 <td class="nom">Guillermo Zeballos <span class="eqtag">Otros</span></td>
-<td class="num">$23,3 M</td>
-<td class="num">$1,1 M</td>
+<td class="num">$23.300.000</td>
+<td class="num">$1.142.017</td>
 <td class="num bold">4,9%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:4.9%"></div><div class="bartick" style="left:31.8%"></div></div></td>
 <td class="num bold neg">12,2%</td>
 <td class="num dim" title="El premio es exclusivo de las 17 rutas de preventa">—</td>
-<td class="num neg">$3,6 M</td>
+<td class="num neg">$3.589.196</td>
 <td><span class="pill bad">Lejos</span></td></tr></tbody></table></div>
 <p class="aviso">El día en curso está incompleto hasta que la preventa termina de cargar. La barra marca el avance sobre el objetivo; la línea vertical es el ritmo esperado a hoy (7/22 días hábiles). Margen verde ≥ 17%, ámbar a menos de 1 punto, rojo por debajo. <strong>Para ver el detalle de lo vendido (proveedor, cliente y artículo) tocá el nombre de la vendedora en las tablas por supervisor de abajo.</strong></p>
 </section>
 
 <section class="equipo" data-eq="JUAN ARMANDOLA">
-<div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10 · objetivo fijado por la dirección (equivale a su septiembre × 1,04)</span><span class="eq-obj">$820,0 M</span></div>
+<div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10 · objetivo fijado por la dirección (equivale a su septiembre × 1,04)</span><span class="eq-obj">$820.000.000</span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">1</td><td class="nom"><button class="dtog" data-cod="1" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Fiama Jara</button></td><td class="num dim">255</td>
-<td class="num">$93,2 M</td>
-<td class="num obj">$96,8 M</td>
-<td class="num">$26,8 M</td>
+<td class="num">$93.175.934</td>
+<td class="num obj">$96.800.000</td>
+<td class="num">$26.797.234</td>
 <td class="num bold ">27,7%</td>
 <td class="num bold pos">17,9%</td>
-<td class="num bold neg">$84,2 M</td></tr>
+<td class="num bold neg">$84.219.878</td></tr>
 <tr class="drow" id="d-1" hidden><td colspan="9"><div class="dpanel" data-cod="1"></div></td></tr>
 <tr class="vrow">
 <td class="cod">2</td><td class="nom"><button class="dtog" data-cod="2" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Sofia Aquino</button></td><td class="num dim">255</td>
-<td class="num">$81,4 M</td>
-<td class="num obj">$84,5 M</td>
-<td class="num">$26,4 M</td>
+<td class="num">$81.419.730</td>
+<td class="num obj">$84.500.000</td>
+<td class="num">$26.358.996</td>
 <td class="num bold ">31,2%</td>
 <td class="num bold amb">16,3%</td>
-<td class="num bold ">$82,8 M</td></tr>
+<td class="num bold ">$82.842.559</td></tr>
 <tr class="drow" id="d-2" hidden><td colspan="9"><div class="dpanel" data-cod="2"></div></td></tr>
 <tr class="vrow">
 <td class="cod">3</td><td class="nom"><button class="dtog" data-cod="3" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Silvia Boutet</button></td><td class="num dim">250</td>
-<td class="num">$80,8 M</td>
-<td class="num obj">$83,9 M</td>
-<td class="num">$23,8 M</td>
+<td class="num">$80.803.663</td>
+<td class="num obj">$83.900.000</td>
+<td class="num">$23.810.756</td>
 <td class="num bold ">28,4%</td>
 <td class="num bold pos">17,9%</td>
-<td class="num bold neg">$74,8 M</td></tr>
+<td class="num bold neg">$74.833.804</td></tr>
 <tr class="drow" id="d-3" hidden><td colspan="9"><div class="dpanel" data-cod="3"></div></td></tr>
 <tr class="vrow">
 <td class="cod">4</td><td class="nom"><button class="dtog" data-cod="4" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Rocio More</button></td><td class="num dim">285</td>
-<td class="num">$70,0 M</td>
-<td class="num obj">$72,7 M</td>
-<td class="num">$21,1 M</td>
+<td class="num">$69.963.972</td>
+<td class="num obj">$72.700.000</td>
+<td class="num">$21.104.676</td>
 <td class="num bold ">29,0%</td>
 <td class="num bold pos">18,1%</td>
-<td class="num bold ">$66,3 M</td></tr>
+<td class="num bold ">$66.328.982</td></tr>
 <tr class="drow" id="d-4" hidden><td colspan="9"><div class="dpanel" data-cod="4"></div></td></tr>
 <tr class="vrow">
 <td class="cod">5</td><td class="nom"><button class="dtog" data-cod="5" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Samanta Machado</button></td><td class="num dim">258</td>
-<td class="num">$79,9 M</td>
-<td class="num obj">$82,9 M</td>
-<td class="num">$22,2 M</td>
+<td class="num">$79.855.870</td>
+<td class="num obj">$82.900.000</td>
+<td class="num">$22.249.595</td>
 <td class="num bold ">26,8%</td>
 <td class="num bold amb">16,3%</td>
-<td class="num bold neg">$69,9 M</td></tr>
+<td class="num bold neg">$69.927.297</td></tr>
 <tr class="drow" id="d-5" hidden><td colspan="9"><div class="dpanel" data-cod="5"></div></td></tr>
 <tr class="vrow">
 <td class="cod">6</td><td class="nom"><button class="dtog" data-cod="6" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Angela Echeverria</button></td><td class="num dim">278</td>
-<td class="num">$110,0 M</td>
-<td class="num obj">$114,3 M</td>
-<td class="num">$35,4 M</td>
+<td class="num">$110.032.948</td>
+<td class="num obj">$114.300.000</td>
+<td class="num">$35.409.128</td>
 <td class="num bold ">31,0%</td>
 <td class="num bold neg">14,7%</td>
-<td class="num bold ">$111,3 M</td></tr>
+<td class="num bold ">$111.285.830</td></tr>
 <tr class="drow" id="d-6" hidden><td colspan="9"><div class="dpanel" data-cod="6"></div></td></tr>
 <tr class="vrow">
 <td class="cod">7</td><td class="nom"><button class="dtog" data-cod="7" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Lorena Escobar</button></td><td class="num dim">262</td>
-<td class="num">$69,1 M</td>
-<td class="num obj">$71,8 M</td>
-<td class="num">$15,0 M</td>
+<td class="num">$69.115.335</td>
+<td class="num obj">$71.800.000</td>
+<td class="num">$15.020.923</td>
 <td class="num bold neg">20,9%</td>
 <td class="num bold pos">19,4%</td>
-<td class="num bold neg">$47,2 M</td></tr>
+<td class="num bold neg">$47.208.614</td></tr>
 <tr class="drow" id="d-7" hidden><td colspan="9"><div class="dpanel" data-cod="7"></div></td></tr>
 <tr class="vrow">
 <td class="cod">8</td><td class="nom"><button class="dtog" data-cod="8" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Valentina Gomez</button></td><td class="num dim">245</td>
-<td class="num">$66,7 M</td>
-<td class="num obj">$69,2 M</td>
-<td class="num">$17,3 M</td>
+<td class="num">$66.670.303</td>
+<td class="num obj">$69.200.000</td>
+<td class="num">$17.287.752</td>
 <td class="num bold neg">25,0%</td>
 <td class="num bold pos">19,0%</td>
-<td class="num bold neg">$54,3 M</td></tr>
+<td class="num bold neg">$54.332.936</td></tr>
 <tr class="drow" id="d-8" hidden><td colspan="9"><div class="dpanel" data-cod="8"></div></td></tr>
 <tr class="vrow">
 <td class="cod">9</td><td class="nom"><button class="dtog" data-cod="9" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Pilar Fernandez</button></td><td class="num dim">252</td>
-<td class="num">$65,5 M</td>
-<td class="num obj">$68,1 M</td>
-<td class="num">$19,3 M</td>
+<td class="num">$65.544.154</td>
+<td class="num obj">$68.100.000</td>
+<td class="num">$19.340.163</td>
 <td class="num bold ">28,4%</td>
 <td class="num bold pos">19,3%</td>
-<td class="num bold neg">$60,8 M</td></tr>
+<td class="num bold neg">$60.783.368</td></tr>
 <tr class="drow" id="d-9" hidden><td colspan="9"><div class="dpanel" data-cod="9"></div></td></tr>
 <tr class="vrow">
 <td class="cod">10</td><td class="nom"><button class="dtog" data-cod="10" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Magali Bader</button></td><td class="num dim">269</td>
-<td class="num">$73,0 M</td>
-<td class="num obj">$75,8 M</td>
-<td class="num">$19,5 M</td>
+<td class="num">$73.007.452</td>
+<td class="num obj">$75.800.000</td>
+<td class="num">$19.511.832</td>
 <td class="num bold ">25,7%</td>
 <td class="num bold pos">20,0%</td>
-<td class="num bold neg">$61,3 M</td></tr>
+<td class="num bold neg">$61.322.902</td></tr>
 <tr class="drow" id="d-10" hidden><td colspan="9"><div class="dpanel" data-cod="10"></div></td></tr>
-<tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num">2.609</td><td class="num">$789,6 M</td><td class="num obj">$820,0 M</td><td class="num">$226,9 M</td><td class="num bold ">27,7%</td><td class="num bold pos">17,5%</td><td class="num bold neg">$713,1 M</td></tr>
+<tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num">2.609</td><td class="num">$789.589.361</td><td class="num obj">$820.000.000</td><td class="num">$226.891.054</td><td class="num bold ">27,7%</td><td class="num bold pos">17,5%</td><td class="num bold neg">$713.086.171</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo" data-eq="FLORENCIA LIBERA">
-<div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38 · objetivo fijado por la dirección (equivale a su septiembre × 1,07)</span><span class="eq-obj">$570,0 M</span></div>
+<div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38 · objetivo fijado por la dirección (equivale a su septiembre × 1,07)</span><span class="eq-obj">$570.000.000</span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">31</td><td class="nom"><button class="dtog" data-cod="31" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Nahuel Baeta</button></td><td class="num dim">288</td>
-<td class="num">$66,2 M</td>
-<td class="num obj">$70,6 M</td>
-<td class="num">$18,2 M</td>
+<td class="num">$66.179.886</td>
+<td class="num obj">$70.600.000</td>
+<td class="num">$18.167.241</td>
 <td class="num bold ">25,7%</td>
 <td class="num bold pos">18,0%</td>
-<td class="num bold neg">$57,1 M</td></tr>
+<td class="num bold neg">$57.097.044</td></tr>
 <tr class="drow" id="d-31" hidden><td colspan="9"><div class="dpanel" data-cod="31"></div></td></tr>
 <tr class="vrow">
 <td class="cod">32</td><td class="nom"><button class="dtog" data-cod="32" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Carolina Echeverria</button></td><td class="num dim">281</td>
-<td class="num">$73,0 M</td>
-<td class="num obj">$77,9 M</td>
-<td class="num">$24,7 M</td>
+<td class="num">$73.008.134</td>
+<td class="num obj">$77.900.000</td>
+<td class="num">$24.716.123</td>
 <td class="num bold ">31,7%</td>
 <td class="num bold pos">17,5%</td>
-<td class="num bold ">$77,7 M</td></tr>
+<td class="num bold ">$77.679.243</td></tr>
 <tr class="drow" id="d-32" hidden><td colspan="9"><div class="dpanel" data-cod="32"></div></td></tr>
 <tr class="vrow">
 <td class="cod">33</td><td class="nom"><button class="dtog" data-cod="33" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Sofia Cativiela</button></td><td class="num dim">253</td>
-<td class="num">$112,8 M</td>
-<td class="num obj">$120,3 M</td>
-<td class="num">$39,4 M</td>
+<td class="num">$112.772.027</td>
+<td class="num obj">$120.300.000</td>
+<td class="num">$39.410.433</td>
 <td class="num bold pos">32,8%</td>
 <td class="num bold amb">16,7%</td>
-<td class="num bold pos">$123,9 M</td></tr>
+<td class="num bold pos">$123.861.360</td></tr>
 <tr class="drow" id="d-33" hidden><td colspan="9"><div class="dpanel" data-cod="33"></div></td></tr>
 <tr class="vrow">
 <td class="cod">34</td><td class="nom"><button class="dtog" data-cod="34" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Natalia Polito</button></td><td class="num dim">297</td>
-<td class="num">$59,0 M</td>
-<td class="num obj">$63,0 M</td>
-<td class="num">$18,3 M</td>
+<td class="num">$58.988.103</td>
+<td class="num obj">$63.000.000</td>
+<td class="num">$18.305.125</td>
 <td class="num bold ">29,1%</td>
 <td class="num bold pos">17,8%</td>
-<td class="num bold ">$57,5 M</td></tr>
+<td class="num bold ">$57.530.394</td></tr>
 <tr class="drow" id="d-34" hidden><td colspan="9"><div class="dpanel" data-cod="34"></div></td></tr>
 <tr class="vrow">
 <td class="cod">35</td><td class="nom"><button class="dtog" data-cod="35" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Ivana Castillo</button></td><td class="num dim">279</td>
-<td class="num">$68,7 M</td>
-<td class="num obj">$73,3 M</td>
-<td class="num">$23,4 M</td>
+<td class="num">$68.727.973</td>
+<td class="num obj">$73.300.000</td>
+<td class="num">$23.356.362</td>
 <td class="num bold pos">31,9%</td>
 <td class="num bold pos">18,7%</td>
-<td class="num bold pos">$73,4 M</td></tr>
+<td class="num bold pos">$73.405.708</td></tr>
 <tr class="drow" id="d-35" hidden><td colspan="9"><div class="dpanel" data-cod="35"></div></td></tr>
 <tr class="vrow">
 <td class="cod">37</td><td class="nom"><button class="dtog" data-cod="37" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Aylen Blanco</button></td><td class="num dim">298</td>
-<td class="num">$87,2 M</td>
-<td class="num obj">$93,1 M</td>
-<td class="num">$23,1 M</td>
+<td class="num">$87.205.754</td>
+<td class="num obj">$93.100.000</td>
+<td class="num">$23.099.642</td>
 <td class="num bold neg">24,8%</td>
 <td class="num bold pos">17,8%</td>
-<td class="num bold neg">$72,6 M</td></tr>
+<td class="num bold neg">$72.598.875</td></tr>
 <tr class="drow" id="d-37" hidden><td colspan="9"><div class="dpanel" data-cod="37"></div></td></tr>
 <tr class="vrow">
 <td class="cod">38</td><td class="nom"><button class="dtog" data-cod="38" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Maria Victoria Zerda</button></td><td class="num dim">264</td>
-<td class="num">$67,2 M</td>
-<td class="num obj">$71,8 M</td>
-<td class="num">$19,1 M</td>
+<td class="num">$67.241.416</td>
+<td class="num obj">$71.800.000</td>
+<td class="num">$19.131.289</td>
 <td class="num bold ">26,6%</td>
 <td class="num bold pos">18,4%</td>
-<td class="num bold neg">$60,1 M</td></tr>
+<td class="num bold neg">$60.126.910</td></tr>
 <tr class="drow" id="d-38" hidden><td colspan="9"><div class="dpanel" data-cod="38"></div></td></tr>
-<tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num">1.960</td><td class="num">$534,1 M</td><td class="num obj">$570,0 M</td><td class="num">$166,2 M</td><td class="num bold ">29,2%</td><td class="num bold pos">17,7%</td><td class="num bold ">$522,3 M</td></tr>
+<tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num">1.960</td><td class="num">$534.123.293</td><td class="num obj">$570.000.000</td><td class="num">$166.186.215</td><td class="num bold ">29,2%</td><td class="num bold pos">17,7%</td><td class="num bold ">$522.299.534</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo" data-eq="LUCIA CEJAS (KAF)">
-<div class="eq-head"><h2>Lucia Cejas (Kaf)</h2><span class="eq-nota">cuentas clave · cód. 24-28 · sin mayoristas regionales · objetivo = su septiembre × 1,07</span><span class="eq-obj">$380,3 M</span></div>
+<div class="eq-head"><h2>Lucia Cejas (Kaf)</h2><span class="eq-nota">cuentas clave · cód. 24-28 · sin mayoristas regionales · objetivo = su septiembre × 1,07</span><span class="eq-obj">$380.300.000</span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">24</td><td class="nom"><button class="dtog" data-cod="24" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Kaf Daniel Sanchez</button></td><td class="num dim">—</td>
-<td class="num">$44,7 M</td>
-<td class="num obj">$47,8 M</td>
-<td class="num">$13,2 M</td>
+<td class="num">$44.705.222</td>
+<td class="num obj">$47.800.000</td>
+<td class="num">$13.246.707</td>
 <td class="num bold ">27,7%</td>
 <td class="num bold neg">5,3%</td>
-<td class="num bold neg">$41,6 M</td></tr>
+<td class="num bold neg">$41.632.509</td></tr>
 <tr class="drow" id="d-24" hidden><td colspan="9"><div class="dpanel" data-cod="24"></div></td></tr>
 <tr class="vrow">
 <td class="cod">25</td><td class="nom"><button class="dtog" data-cod="25" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Kaf Romina Merello</button></td><td class="num dim">—</td>
-<td class="num">$126,1 M</td>
-<td class="num obj">$135,0 M</td>
-<td class="num">$30,2 M</td>
+<td class="num">$126.126.038</td>
+<td class="num obj">$135.000.000</td>
+<td class="num">$30.210.853</td>
 <td class="num bold neg">22,4%</td>
 <td class="num bold neg">4,1%</td>
-<td class="num bold neg">$94,9 M</td></tr>
+<td class="num bold neg">$94.948.395</td></tr>
 <tr class="drow" id="d-25" hidden><td colspan="9"><div class="dpanel" data-cod="25"></div></td></tr>
 <tr class="vrow">
 <td class="cod">26</td><td class="nom"><button class="dtog" data-cod="26" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Kaf Gaby Peralta</button></td><td class="num dim">—</td>
-<td class="num">$95,7 M</td>
-<td class="num obj">$102,4 M</td>
-<td class="num">$32,1 M</td>
+<td class="num">$95.701.182</td>
+<td class="num obj">$102.400.000</td>
+<td class="num">$32.122.051</td>
 <td class="num bold ">31,4%</td>
 <td class="num bold neg">7,1%</td>
-<td class="num bold ">$101,0 M</td></tr>
+<td class="num bold ">$100.955.019</td></tr>
 <tr class="drow" id="d-26" hidden><td colspan="9"><div class="dpanel" data-cod="26"></div></td></tr>
 <tr class="vrow">
 <td class="cod">27</td><td class="nom"><button class="dtog" data-cod="27" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Kaf Maria Jose Minio</button></td><td class="num dim">—</td>
-<td class="num">$77,8 M</td>
-<td class="num obj">$83,3 M</td>
-<td class="num">$24,2 M</td>
+<td class="num">$77.812.468</td>
+<td class="num obj">$83.300.000</td>
+<td class="num">$24.221.378</td>
 <td class="num bold ">29,1%</td>
 <td class="num bold neg">7,3%</td>
-<td class="num bold ">$76,1 M</td></tr>
+<td class="num bold ">$76.124.331</td></tr>
 <tr class="drow" id="d-27" hidden><td colspan="9"><div class="dpanel" data-cod="27"></div></td></tr>
 <tr class="vrow">
 <td class="cod">28</td><td class="nom"><button class="dtog" data-cod="28" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Vendedor 28 Kaf</button></td><td class="num dim">—</td>
-<td class="num">$11,0 M</td>
-<td class="num obj">$11,8 M</td>
-<td class="num">$1,7 M</td>
+<td class="num">$11.009.411</td>
+<td class="num obj">$11.800.000</td>
+<td class="num">$1.692.939</td>
 <td class="num bold neg">14,3%</td>
 <td class="num bold pos">20,8%</td>
-<td class="num bold neg">$5,3 M</td></tr>
+<td class="num bold neg">$5.320.666</td></tr>
 <tr class="drow" id="d-28" hidden><td colspan="9"><div class="dpanel" data-cod="28"></div></td></tr>
-<tr class="subtot"><td></td><td>Total Lucia Cejas (Kaf)</td><td class="num">—</td><td class="num">$355,4 M</td><td class="num obj">$380,3 M</td><td class="num">$101,5 M</td><td class="num bold ">26,7%</td><td class="num bold neg">6,2%</td><td class="num bold neg">$319,0 M</td></tr>
+<tr class="subtot"><td></td><td>Total Lucia Cejas (Kaf)</td><td class="num">—</td><td class="num">$355.354.321</td><td class="num obj">$380.300.000</td><td class="num">$101.493.929</td><td class="num bold ">26,7%</td><td class="num bold neg">6,2%</td><td class="num bold neg">$318.980.921</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo" data-eq="JOAQUIN (DUEÑO)">
-<div class="eq-head"><h2>Joaquin (Dueño)</h2><span class="eq-nota">subramo Mayoristas Regional · facturado vía KAF · objetivo = su septiembre × 1,07</span><span class="eq-obj">$503,0 M</span></div>
+<div class="eq-head"><h2>Joaquin (Dueño)</h2><span class="eq-nota">subramo Mayoristas Regional · facturado vía KAF · objetivo = su septiembre × 1,07</span><span class="eq-obj">$503.000.000</span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">J</td><td class="nom"><button class="dtog" data-cod="J" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Joaquín — Mayoristas Regionales</button></td><td class="num dim">—</td>
-<td class="num">$470,1 M</td>
-<td class="num obj">$503,0 M</td>
-<td class="num">$190,4 M</td>
+<td class="num">$470.104.319</td>
+<td class="num obj">$503.000.000</td>
+<td class="num">$190.448.954</td>
 <td class="num bold pos">37,9%</td>
 <td class="num bold neg">-3,0%</td>
-<td class="num bold pos">$598,6 M</td></tr>
+<td class="num bold pos">$598.553.855</td></tr>
 <tr class="drow" id="d-J" hidden><td colspan="9"><div class="dpanel" data-cod="J"></div></td></tr>
-<tr class="subtot"><td></td><td>Total Joaquin (Dueño)</td><td class="num">—</td><td class="num">$470,1 M</td><td class="num obj">$503,0 M</td><td class="num">$190,4 M</td><td class="num bold pos">37,9%</td><td class="num bold neg">-3,0%</td><td class="num bold pos">$598,6 M</td></tr>
+<tr class="subtot"><td></td><td>Total Joaquin (Dueño)</td><td class="num">—</td><td class="num">$470.104.319</td><td class="num obj">$503.000.000</td><td class="num">$190.448.954</td><td class="num bold pos">37,9%</td><td class="num bold neg">-3,0%</td><td class="num bold pos">$598.553.855</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo" data-eq="SIN SUPERVISOR / OTROS">
-<div class="eq-head"><h2>Sin Supervisor / Otros</h2><span class="eq-nota">depósito, mayorista y resto · objetivo = su septiembre × 1,07</span><span class="eq-obj">$631,0 M</span></div>
+<div class="eq-head"><h2>Sin Supervisor / Otros</h2><span class="eq-nota">depósito, mayorista y resto · objetivo = su septiembre × 1,07</span><span class="eq-obj">$631.000.000</span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">20</td><td class="nom"><button class="dtog" data-cod="20" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Deposito</button></td><td class="num dim">—</td>
-<td class="num">$6,7 M</td>
-<td class="num obj">$7,2 M</td>
-<td class="num">$0,7 M</td>
+<td class="num">$6.729.252</td>
+<td class="num obj">$7.200.000</td>
+<td class="num">$698.386</td>
 <td class="num bold neg">9,7%</td>
 <td class="num bold neg">9,7%</td>
-<td class="num bold neg">$2,2 M</td></tr>
+<td class="num bold neg">$2.194.928</td></tr>
 <tr class="drow" id="d-20" hidden><td colspan="9"><div class="dpanel" data-cod="20"></div></td></tr>
 <tr class="vrow">
 <td class="cod">21</td><td class="nom"><button class="dtog" data-cod="21" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Vendedor 21</button></td><td class="num dim">—</td>
-<td class="num">$122,6 M</td>
-<td class="num obj">$131,2 M</td>
-<td class="num">$28,4 M</td>
+<td class="num">$122.600.429</td>
+<td class="num obj">$131.200.000</td>
+<td class="num">$28.389.951</td>
 <td class="num bold neg">21,6%</td>
 <td class="num bold neg">15,5%</td>
-<td class="num bold neg">$89,2 M</td></tr>
+<td class="num bold neg">$89.225.561</td></tr>
 <tr class="drow" id="d-21" hidden><td colspan="9"><div class="dpanel" data-cod="21"></div></td></tr>
 <tr class="vrow">
 <td class="cod">50</td><td class="nom"><button class="dtog" data-cod="50" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Guillermo Zeballos</button></td><td class="num dim">—</td>
-<td class="num">$21,7 M</td>
-<td class="num obj">$23,3 M</td>
-<td class="num">$1,1 M</td>
+<td class="num">$21.737.451</td>
+<td class="num obj">$23.300.000</td>
+<td class="num">$1.142.017</td>
 <td class="num bold neg">4,9%</td>
 <td class="num bold neg">12,2%</td>
-<td class="num bold neg">$3,6 M</td></tr>
+<td class="num bold neg">$3.589.196</td></tr>
 <tr class="drow" id="d-50" hidden><td colspan="9"><div class="dpanel" data-cod="50"></div></td></tr>
 <tr class="vrow">
 <td class="cod">51</td><td class="nom"><button class="dtog" data-cod="51" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Martin Di Giorno</button></td><td class="num dim">—</td>
-<td class="num">$438,6 M</td>
-<td class="num obj">$469,3 M</td>
-<td class="num">$226,7 M</td>
+<td class="num">$438.569.792</td>
+<td class="num obj">$469.300.000</td>
+<td class="num">$226.664.207</td>
 <td class="num bold pos">48,3%</td>
 <td class="num bold neg">0,6%</td>
-<td class="num bold pos">$712,4 M</td></tr>
+<td class="num bold pos">$712.373.222</td></tr>
 <tr class="drow" id="d-51" hidden><td colspan="9"><div class="dpanel" data-cod="51"></div></td></tr>
-<tr class="subtot"><td></td><td>Total Sin Supervisor / Otros</td><td class="num">—</td><td class="num">$589,6 M</td><td class="num obj">$631,0 M</td><td class="num">$256,9 M</td><td class="num bold pos">40,7%</td><td class="num bold neg">2,3%</td><td class="num bold pos">$807,4 M</td></tr>
+<tr class="subtot"><td></td><td>Total Sin Supervisor / Otros</td><td class="num">—</td><td class="num">$589.636.924</td><td class="num obj">$631.000.000</td><td class="num">$256.894.561</td><td class="num bold pos">40,7%</td><td class="num bold neg">2,3%</td><td class="num bold pos">$807.382.907</td></tr>
 </tbody></table></div>
 </section>
 
@@ -747,13 +747,13 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <h3>Cómo se armó el objetivo de octubre</h3>
 <div class="twrap"><table>
 <thead><tr><th>Equipo</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th></tr></thead>
-<tbody><tr><td>Juan Armandola</td><td class="num">$789,6 M</td><td class="num obj">$820,0 M</td></tr>
-<tr><td>Florencia Libera</td><td class="num">$534,1 M</td><td class="num obj">$570,0 M</td></tr>
-<tr><td>Lucia Cejas (Kaf)</td><td class="num">$355,4 M</td><td class="num obj">$380,3 M</td></tr>
-<tr><td>Joaquin (Dueño)</td><td class="num">$470,1 M</td><td class="num obj">$503,0 M</td></tr>
-<tr><td>Sin Supervisor / Otros</td><td class="num">$589,6 M</td><td class="num obj">$631,0 M</td></tr>
-<tr class="subtot"><td>Total</td><td class="num">$2.738,8 M</td><td class="num obj">$2.904,3 M</td></tr></tbody></table></div>
-<p>La base es la <strong>venta real de septiembre</strong> (cierre definitivo, con devoluciones descontadas, cada cliente en su ruta vigente y los mayoristas regionales en el bloque de Joaquín). El objetivo es esa venta <strong>× 1,07</strong>, redondeado a $100.000 por vendedora. <strong>Juan Armandola</strong> tiene objetivo fijado por la dirección en <strong>$820,0 M</strong>, dispersado entre sus vendedoras según el peso de cada una en el septiembre del equipo. <strong>Florencia Libera</strong> tiene objetivo fijado por la dirección en <strong>$570,0 M</strong>, dispersado entre sus vendedoras según el peso de cada una en el septiembre del equipo.</p>
+<tbody><tr><td>Juan Armandola</td><td class="num">$789.589.361</td><td class="num obj">$820.000.000</td></tr>
+<tr><td>Florencia Libera</td><td class="num">$534.123.293</td><td class="num obj">$570.000.000</td></tr>
+<tr><td>Lucia Cejas (Kaf)</td><td class="num">$355.354.321</td><td class="num obj">$380.300.000</td></tr>
+<tr><td>Joaquin (Dueño)</td><td class="num">$470.104.319</td><td class="num obj">$503.000.000</td></tr>
+<tr><td>Sin Supervisor / Otros</td><td class="num">$589.636.924</td><td class="num obj">$631.000.000</td></tr>
+<tr class="subtot"><td>Total</td><td class="num">$2.738.808.218</td><td class="num obj">$2.904.300.000</td></tr></tbody></table></div>
+<p>La base es la <strong>venta real de septiembre</strong> (cierre definitivo, con devoluciones descontadas, cada cliente en su ruta vigente y los mayoristas regionales en el bloque de Joaquín). El objetivo es esa venta <strong>× 1,07</strong>, redondeado a $100.000 por vendedora. <strong>Juan Armandola</strong> tiene objetivo fijado por la dirección en <strong>$820.000.000</strong>, dispersado entre sus vendedoras según el peso de cada una en el septiembre del equipo. <strong>Florencia Libera</strong> tiene objetivo fijado por la dirección en <strong>$570.000.000</strong>, dispersado entre sus vendedoras según el peso de cada una en el septiembre del equipo.</p>
 </div>
 </div>
 </div>
@@ -762,13 +762,13 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <p class="sub">Cómo terminó septiembre contra su objetivo original (agosto × 1,08, metodología de ese mes). Mes cerrado: venta final con devoluciones descontadas y premios liquidados.</p>
 
 <div class="kpis">
-<div class="kpi"><div class="l">Objetivo de septiembre</div><div class="v">$2.297,1 M</div><div class="n">agosto × 1,08 por equipo (metodología de sep)</div></div>
-<div class="kpi"><div class="l">Cierre del mes</div><div class="v verde">$2.738,8 M</div><div class="n">venta final c/IVA, devoluciones descontadas</div></div>
-<div class="kpi"><div class="l">Cumplimiento</div><div class="v verde">119,2%</div><div class="n">$441,7 M por encima del objetivo</div></div>
+<div class="kpi"><div class="l">Objetivo de septiembre</div><div class="v">$2.297.100.000</div><div class="n">agosto × 1,08 por equipo (metodología de sep)</div></div>
+<div class="kpi"><div class="l">Cierre del mes</div><div class="v verde">$2.738.808.218</div><div class="n">venta final c/IVA, devoluciones descontadas</div></div>
+<div class="kpi"><div class="l">Cumplimiento</div><div class="v verde">119,2%</div><div class="n">$441.708.218 por encima del objetivo</div></div>
 <div class="kpi"><div class="l">Margen preventa final</div><div class="v verde">17,3%</div><div class="n">17 rutas · piso del premio: 17%</div></div>
 <div class="kpi"><div class="l">Premios ganados</div><div class="v">$420.000</div><div class="n">Magali Bader · Sofia Cativiela · Silvia Boutet</div></div>
 </div>
-<div class="formula"><span>Agosto del equipo</span><b>$2.127,2 M</b><span class="op">×</span><span>crecimiento objetivo</span><b>1,08</b><span class="op">=</span><span>objetivo</span><b>$2.297,1 M</b><span class="op">·</span><span>metodología de septiembre: nivel de agosto por equipo, repartido por promedio jun–ago con la cartera vigente</span></div>
+<div class="formula"><span>Agosto del equipo</span><b>$2.127.201.062</b><span class="op">×</span><span>crecimiento objetivo</span><b>1,08</b><span class="op">=</span><span>objetivo</span><b>$2.297.100.000</b><span class="op">·</span><span>metodología de septiembre: nivel de agosto por equipo, repartido por promedio jun–ago con la cartera vigente</span></div>
 <section class="equipo">
 <div class="eq-head"><h2>Resultado final del mes</h2><span class="eq-nota">mes cerrado · 22 de 22 días hábiles · premio: 100% del objetivo + margen (17%→$100.000 · 17,5%→$150.000 · 18%→$200.000 · desde 18,5%→$220.000)</span></div>
 <div class="twrap"><table class="rank">
@@ -776,8 +776,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tbody><tr>
 <td class="cod">1</td>
 <td class="nom">Martin Di Giorno <span class="eqtag">Otros</span></td>
-<td class="num">$205,3 M</td>
-<td class="num bold">$438,6 M</td>
+<td class="num">$205.300.000</td>
+<td class="num bold">$438.569.792</td>
 <td class="num bold pos">213,6%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">0,4%</td>
@@ -786,8 +786,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">2</td>
 <td class="nom">Deposito <span class="eqtag">Otros</span></td>
-<td class="num">$4,5 M</td>
-<td class="num bold">$6,7 M</td>
+<td class="num">$4.500.000</td>
+<td class="num bold">$6.729.252</td>
 <td class="num bold pos">149,5%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">6,0%</td>
@@ -796,8 +796,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">🏆3</td>
 <td class="nom">Sofia Cativiela <span class="eqtag">Flor</span></td>
-<td class="num">$97,3 M</td>
-<td class="num bold">$112,8 M</td>
+<td class="num">$97.300.000</td>
+<td class="num bold">$112.772.027</td>
 <td class="num bold pos">115,9%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,2%</td>
@@ -806,8 +806,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">4</td>
 <td class="nom">Kaf Romina Merello <span class="eqtag">Luci</span></td>
-<td class="num">$111,1 M</td>
-<td class="num bold">$126,1 M</td>
+<td class="num">$111.100.000</td>
+<td class="num bold">$126.126.038</td>
 <td class="num bold pos">113,5%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">5,0%</td>
@@ -816,8 +816,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">5</td>
 <td class="nom">Kaf Gaby Peralta <span class="eqtag">Luci</span></td>
-<td class="num">$85,9 M</td>
-<td class="num bold">$95,7 M</td>
+<td class="num">$85.900.000</td>
+<td class="num bold">$95.701.182</td>
 <td class="num bold pos">111,4%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">6,4%</td>
@@ -826,8 +826,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">🏆6</td>
 <td class="nom">Silvia Boutet <span class="eqtag">Juan</span></td>
-<td class="num">$78,7 M</td>
-<td class="num bold">$80,8 M</td>
+<td class="num">$78.700.000</td>
+<td class="num bold">$80.803.663</td>
 <td class="num bold pos">102,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,1%</td>
@@ -836,8 +836,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">7</td>
 <td class="nom">Vendedor 21 <span class="eqtag">Otros</span></td>
-<td class="num">$120,7 M</td>
-<td class="num bold">$122,6 M</td>
+<td class="num">$120.700.000</td>
+<td class="num bold">$122.600.429</td>
 <td class="num bold pos">101,6%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">15,9%</td>
@@ -846,8 +846,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">8</td>
 <td class="nom">Vendedor 28 Kaf <span class="eqtag">Luci</span></td>
-<td class="num">$11,0 M</td>
-<td class="num bold">$11,0 M</td>
+<td class="num">$11.000.000</td>
+<td class="num bold">$11.009.411</td>
 <td class="num bold pos">100,1%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">12,4%</td>
@@ -856,8 +856,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">🏆9</td>
 <td class="nom">Magali Bader <span class="eqtag">Juan</span></td>
-<td class="num">$73,0 M</td>
-<td class="num bold">$73,0 M</td>
+<td class="num">$73.000.000</td>
+<td class="num bold">$73.007.452</td>
 <td class="num bold pos">100,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill ok" style="width:100.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">18,6%</td>
@@ -866,8 +866,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">10</td>
 <td class="nom">Ailen Blanco <span class="eqtag">Flor</span></td>
-<td class="num">$88,1 M</td>
-<td class="num bold">$87,2 M</td>
+<td class="num">$88.100.000</td>
+<td class="num bold">$87.205.754</td>
 <td class="num bold ">99,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:99.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">18,2%</td>
@@ -876,8 +876,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">11</td>
 <td class="nom">Angela Echeverria <span class="eqtag">Juan</span></td>
-<td class="num">$111,5 M</td>
-<td class="num bold">$110,0 M</td>
+<td class="num">$111.500.000</td>
+<td class="num bold">$110.032.948</td>
 <td class="num bold ">98,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:98.7%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">15,6%</td>
@@ -886,8 +886,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">12</td>
 <td class="nom">Valentina Gomez <span class="eqtag">Juan</span></td>
-<td class="num">$68,3 M</td>
-<td class="num bold">$66,7 M</td>
+<td class="num">$68.300.000</td>
+<td class="num bold">$66.670.303</td>
 <td class="num bold ">97,6%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:97.6%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">18,1%</td>
@@ -896,8 +896,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">13</td>
 <td class="nom">Lorena Escobar <span class="eqtag">Juan</span></td>
-<td class="num">$73,3 M</td>
-<td class="num bold">$69,1 M</td>
+<td class="num">$73.300.000</td>
+<td class="num bold">$69.115.335</td>
 <td class="num bold ">94,3%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:94.3%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">18,2%</td>
@@ -906,8 +906,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">14</td>
 <td class="nom">Guillermo Zeballos <span class="eqtag">Otros</span></td>
-<td class="num">$23,4 M</td>
-<td class="num bold">$21,7 M</td>
+<td class="num">$23.400.000</td>
+<td class="num bold">$21.737.451</td>
 <td class="num bold ">92,9%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:92.9%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold amb">16,0%</td>
@@ -916,8 +916,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">15</td>
 <td class="nom">Samanta Machado <span class="eqtag">Juan</span></td>
-<td class="num">$87,1 M</td>
-<td class="num bold">$79,9 M</td>
+<td class="num">$87.100.000</td>
+<td class="num bold">$79.855.870</td>
 <td class="num bold ">91,7%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:91.7%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">15,1%</td>
@@ -926,8 +926,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">16</td>
 <td class="nom">Fiama Jara <span class="eqtag">Juan</span></td>
-<td class="num">$101,8 M</td>
-<td class="num bold">$93,2 M</td>
+<td class="num">$101.800.000</td>
+<td class="num bold">$93.175.934</td>
 <td class="num bold ">91,5%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:91.5%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold amb">16,5%</td>
@@ -936,8 +936,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">17</td>
 <td class="nom">Carolina Echeverria <span class="eqtag">Flor</span></td>
-<td class="num">$80,7 M</td>
-<td class="num bold">$73,0 M</td>
+<td class="num">$80.700.000</td>
+<td class="num bold">$73.008.134</td>
 <td class="num bold ">90,5%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:90.5%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">18,4%</td>
@@ -946,8 +946,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">18</td>
 <td class="nom">Sofia Aquino <span class="eqtag">Juan</span></td>
-<td class="num">$90,1 M</td>
-<td class="num bold">$81,4 M</td>
+<td class="num">$90.100.000</td>
+<td class="num bold">$81.419.730</td>
 <td class="num bold ">90,4%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill warn" style="width:90.4%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold amb">16,8%</td>
@@ -956,8 +956,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">19</td>
 <td class="nom">Ivana Castillo <span class="eqtag">Flor</span></td>
-<td class="num">$77,1 M</td>
-<td class="num bold">$68,7 M</td>
+<td class="num">$77.100.000</td>
+<td class="num bold">$68.727.973</td>
 <td class="num bold ">89,1%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:89.1%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,7%</td>
@@ -966,8 +966,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">20</td>
 <td class="nom">Maria Victoria Zerda <span class="eqtag">Flor</span></td>
-<td class="num">$76,3 M</td>
-<td class="num bold">$67,2 M</td>
+<td class="num">$76.300.000</td>
+<td class="num bold">$67.241.416</td>
 <td class="num bold ">88,1%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:88.1%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">18,5%</td>
@@ -976,8 +976,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">21</td>
 <td class="nom">Pilar Fernandez <span class="eqtag">Juan</span></td>
-<td class="num">$75,1 M</td>
-<td class="num bold">$65,5 M</td>
+<td class="num">$75.100.000</td>
+<td class="num bold">$65.544.154</td>
 <td class="num bold ">87,3%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:87.3%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,3%</td>
@@ -986,8 +986,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">22</td>
 <td class="nom">Nahuel Baeta <span class="eqtag">Flor</span></td>
-<td class="num">$76,8 M</td>
-<td class="num bold">$66,2 M</td>
+<td class="num">$76.800.000</td>
+<td class="num bold">$66.179.886</td>
 <td class="num bold ">86,2%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:86.2%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,9%</td>
@@ -996,8 +996,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">23</td>
 <td class="nom">Rocio More <span class="eqtag">Juan</span></td>
-<td class="num">$83,3 M</td>
-<td class="num bold">$70,0 M</td>
+<td class="num">$83.300.000</td>
+<td class="num bold">$69.963.972</td>
 <td class="num bold ">84,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:84.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,5%</td>
@@ -1006,8 +1006,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">24</td>
 <td class="nom">Kaf Daniel Sanchez <span class="eqtag">Luci</span></td>
-<td class="num">$53,7 M</td>
-<td class="num bold">$44,7 M</td>
+<td class="num">$53.700.000</td>
+<td class="num bold">$44.705.222</td>
 <td class="num bold ">83,2%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:83.2%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">6,0%</td>
@@ -1016,8 +1016,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">25</td>
 <td class="nom">Natalia Polito <span class="eqtag">Flor</span></td>
-<td class="num">$77,1 M</td>
-<td class="num bold">$59,0 M</td>
+<td class="num">$77.100.000</td>
+<td class="num bold">$58.988.103</td>
 <td class="num bold ">76,5%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:76.5%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold pos">17,9%</td>
@@ -1026,8 +1026,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">26</td>
 <td class="nom">Kaf Maria Jose Minio <span class="eqtag">Luci</span></td>
-<td class="num">$103,7 M</td>
-<td class="num bold">$77,8 M</td>
+<td class="num">$103.700.000</td>
+<td class="num bold">$77.812.468</td>
 <td class="num bold ">75,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:75.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold neg">6,8%</td>
@@ -1036,8 +1036,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr>
 <td class="cod">27</td>
 <td class="nom">Vendedor 30 <span class="eqtag">Otros</span></td>
-<td class="num">$1,8 M</td>
-<td class="num bold">$0,0 M</td>
+<td class="num">$1.800.000</td>
+<td class="num bold">$0</td>
 <td class="num bold ">0,0%</td>
 <td class="barcell"><div class="bartrack"><div class="barfill bad" style="width:0.0%"></div><div class="bartick" style="left:100%"></div></div></td>
 <td class="num bold ">—</td>
@@ -1046,178 +1046,178 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <p class="aviso">La línea vertical marca el 100% del objetivo. Ganaron el premio: Magali Bader ($220.000, cumplimiento 100,0%, margen 18,6%) · Sofia Cativiela ($100.000, cumplimiento 115,9%, margen 17,2%) · Silvia Boutet ($100.000, cumplimiento 102,7%, margen 17,1%) — total $420.000. El desglose por proveedor, cliente y artículo y los filtros están disponibles en la vista de Octubre (mes en curso).</p>
 </section>
 <section class="equipo">
-<div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10</span><span class="eq-obj">$789,6 M <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
+<div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10</span><span class="eq-obj">$789.589.361 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
 <tbody><tr>
 <td class="cod">1</td><td class="nom">Fiama Jara</td>
-<td class="num obj">$101,8 M</td><td class="num bold">$93,2 M</td>
+<td class="num obj">$101.800.000</td><td class="num bold">$93.175.934</td>
 <td class="num bold ">91,5%</td>
 <td class="num bold amb">16,5%</td></tr>
 <tr>
 <td class="cod">2</td><td class="nom">Sofia Aquino</td>
-<td class="num obj">$90,1 M</td><td class="num bold">$81,4 M</td>
+<td class="num obj">$90.100.000</td><td class="num bold">$81.419.730</td>
 <td class="num bold ">90,4%</td>
 <td class="num bold amb">16,8%</td></tr>
 <tr>
 <td class="cod">3</td><td class="nom">Silvia Boutet</td>
-<td class="num obj">$78,7 M</td><td class="num bold">$80,8 M</td>
+<td class="num obj">$78.700.000</td><td class="num bold">$80.803.663</td>
 <td class="num bold pos">102,7%</td>
 <td class="num bold pos">17,1%</td></tr>
 <tr>
 <td class="cod">4</td><td class="nom">Rocio More</td>
-<td class="num obj">$83,3 M</td><td class="num bold">$70,0 M</td>
+<td class="num obj">$83.300.000</td><td class="num bold">$69.963.972</td>
 <td class="num bold neg">84,0%</td>
 <td class="num bold pos">17,5%</td></tr>
 <tr>
 <td class="cod">5</td><td class="nom">Samanta Machado</td>
-<td class="num obj">$87,1 M</td><td class="num bold">$79,9 M</td>
+<td class="num obj">$87.100.000</td><td class="num bold">$79.855.870</td>
 <td class="num bold ">91,7%</td>
 <td class="num bold neg">15,1%</td></tr>
 <tr>
 <td class="cod">6</td><td class="nom">Angela Echeverria</td>
-<td class="num obj">$111,5 M</td><td class="num bold">$110,0 M</td>
+<td class="num obj">$111.500.000</td><td class="num bold">$110.032.948</td>
 <td class="num bold ">98,7%</td>
 <td class="num bold neg">15,6%</td></tr>
 <tr>
 <td class="cod">7</td><td class="nom">Lorena Escobar</td>
-<td class="num obj">$73,3 M</td><td class="num bold">$69,1 M</td>
+<td class="num obj">$73.300.000</td><td class="num bold">$69.115.335</td>
 <td class="num bold ">94,3%</td>
 <td class="num bold pos">18,2%</td></tr>
 <tr>
 <td class="cod">8</td><td class="nom">Valentina Gomez</td>
-<td class="num obj">$68,3 M</td><td class="num bold">$66,7 M</td>
+<td class="num obj">$68.300.000</td><td class="num bold">$66.670.303</td>
 <td class="num bold ">97,6%</td>
 <td class="num bold pos">18,1%</td></tr>
 <tr>
 <td class="cod">9</td><td class="nom">Pilar Fernandez</td>
-<td class="num obj">$75,1 M</td><td class="num bold">$65,5 M</td>
+<td class="num obj">$75.100.000</td><td class="num bold">$65.544.154</td>
 <td class="num bold neg">87,3%</td>
 <td class="num bold pos">17,3%</td></tr>
 <tr>
 <td class="cod">10</td><td class="nom">Magali Bader</td>
-<td class="num obj">$73,0 M</td><td class="num bold">$73,0 M</td>
+<td class="num obj">$73.000.000</td><td class="num bold">$73.007.452</td>
 <td class="num bold pos">100,0%</td>
 <td class="num bold pos">18,6%</td></tr>
-<tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num obj">$842,2 M</td><td class="num">$789,6 M</td><td class="num bold ">93,8%</td><td class="num bold pos">17,0%</td></tr>
+<tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num obj">$842.200.000</td><td class="num">$789.589.361</td><td class="num bold ">93,8%</td><td class="num bold pos">17,0%</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo">
-<div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38</span><span class="eq-obj">$534,1 M <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
+<div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38</span><span class="eq-obj">$534.123.293 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
 <tbody><tr>
 <td class="cod">31</td><td class="nom">Nahuel Baeta</td>
-<td class="num obj">$76,8 M</td><td class="num bold">$66,2 M</td>
+<td class="num obj">$76.800.000</td><td class="num bold">$66.179.886</td>
 <td class="num bold neg">86,2%</td>
 <td class="num bold pos">17,9%</td></tr>
 <tr>
 <td class="cod">32</td><td class="nom">Carolina Echeverria</td>
-<td class="num obj">$80,7 M</td><td class="num bold">$73,0 M</td>
+<td class="num obj">$80.700.000</td><td class="num bold">$73.008.134</td>
 <td class="num bold ">90,5%</td>
 <td class="num bold pos">18,4%</td></tr>
 <tr>
 <td class="cod">33</td><td class="nom">Sofia Cativiela</td>
-<td class="num obj">$97,3 M</td><td class="num bold">$112,8 M</td>
+<td class="num obj">$97.300.000</td><td class="num bold">$112.772.027</td>
 <td class="num bold pos">115,9%</td>
 <td class="num bold pos">17,2%</td></tr>
 <tr>
 <td class="cod">34</td><td class="nom">Natalia Polito</td>
-<td class="num obj">$77,1 M</td><td class="num bold">$59,0 M</td>
+<td class="num obj">$77.100.000</td><td class="num bold">$58.988.103</td>
 <td class="num bold neg">76,5%</td>
 <td class="num bold pos">17,9%</td></tr>
 <tr>
 <td class="cod">35</td><td class="nom">Ivana Castillo</td>
-<td class="num obj">$77,1 M</td><td class="num bold">$68,7 M</td>
+<td class="num obj">$77.100.000</td><td class="num bold">$68.727.973</td>
 <td class="num bold neg">89,1%</td>
 <td class="num bold pos">17,7%</td></tr>
 <tr>
 <td class="cod">37</td><td class="nom">Ailen Blanco</td>
-<td class="num obj">$88,1 M</td><td class="num bold">$87,2 M</td>
+<td class="num obj">$88.100.000</td><td class="num bold">$87.205.754</td>
 <td class="num bold ">99,0%</td>
 <td class="num bold pos">18,2%</td></tr>
 <tr>
 <td class="cod">38</td><td class="nom">Maria Victoria Zerda</td>
-<td class="num obj">$76,3 M</td><td class="num bold">$67,2 M</td>
+<td class="num obj">$76.300.000</td><td class="num bold">$67.241.416</td>
 <td class="num bold neg">88,1%</td>
 <td class="num bold pos">18,5%</td></tr>
-<tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num obj">$573,4 M</td><td class="num">$534,1 M</td><td class="num bold ">93,2%</td><td class="num bold pos">17,9%</td></tr>
+<tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num obj">$573.400.000</td><td class="num">$534.123.293</td><td class="num bold ">93,2%</td><td class="num bold pos">17,9%</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo">
-<div class="eq-head"><h2>Lucia Cejas (Kaf)</h2><span class="eq-nota">cuentas clave · cód. 24-28 · sin mayoristas regionales</span><span class="eq-obj">$355,4 M <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
+<div class="eq-head"><h2>Lucia Cejas (Kaf)</h2><span class="eq-nota">cuentas clave · cód. 24-28 · sin mayoristas regionales</span><span class="eq-obj">$355.354.321 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
 <tbody><tr>
 <td class="cod">24</td><td class="nom">Kaf Daniel Sanchez</td>
-<td class="num obj">$53,7 M</td><td class="num bold">$44,7 M</td>
+<td class="num obj">$53.700.000</td><td class="num bold">$44.705.222</td>
 <td class="num bold neg">83,2%</td>
 <td class="num bold neg">6,0%</td></tr>
 <tr>
 <td class="cod">25</td><td class="nom">Kaf Romina Merello</td>
-<td class="num obj">$111,1 M</td><td class="num bold">$126,1 M</td>
+<td class="num obj">$111.100.000</td><td class="num bold">$126.126.038</td>
 <td class="num bold pos">113,5%</td>
 <td class="num bold neg">5,0%</td></tr>
 <tr>
 <td class="cod">26</td><td class="nom">Kaf Gaby Peralta</td>
-<td class="num obj">$85,9 M</td><td class="num bold">$95,7 M</td>
+<td class="num obj">$85.900.000</td><td class="num bold">$95.701.182</td>
 <td class="num bold pos">111,4%</td>
 <td class="num bold neg">6,4%</td></tr>
 <tr>
 <td class="cod">27</td><td class="nom">Kaf Maria Jose Minio</td>
-<td class="num obj">$103,7 M</td><td class="num bold">$77,8 M</td>
+<td class="num obj">$103.700.000</td><td class="num bold">$77.812.468</td>
 <td class="num bold neg">75,0%</td>
 <td class="num bold neg">6,8%</td></tr>
 <tr>
 <td class="cod">28</td><td class="nom">Vendedor 28 Kaf</td>
-<td class="num obj">$11,0 M</td><td class="num bold">$11,0 M</td>
+<td class="num obj">$11.000.000</td><td class="num bold">$11.009.411</td>
 <td class="num bold pos">100,1%</td>
 <td class="num bold neg">12,4%</td></tr>
-<tr class="subtot"><td></td><td>Total Lucia Cejas (Kaf)</td><td class="num obj">$365,4 M</td><td class="num">$355,4 M</td><td class="num bold ">97,3%</td><td class="num bold neg">6,1%</td></tr>
+<tr class="subtot"><td></td><td>Total Lucia Cejas (Kaf)</td><td class="num obj">$365.400.000</td><td class="num">$355.354.321</td><td class="num bold ">97,3%</td><td class="num bold neg">6,1%</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo">
-<div class="eq-head"><h2>Joaquin (Dueño)</h2><span class="eq-nota">subramo Mayoristas Regional · facturado vía KAF</span><span class="eq-obj">$470,1 M <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
+<div class="eq-head"><h2>Joaquin (Dueño)</h2><span class="eq-nota">subramo Mayoristas Regional · facturado vía KAF</span><span class="eq-obj">$470.104.319 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
 <tbody><tr>
 <td class="cod">J</td><td class="nom">Joaquín — Mayoristas Regionales</td>
-<td class="num obj">$160,4 M</td><td class="num bold">$470,1 M</td>
+<td class="num obj">$160.400.000</td><td class="num bold">$470.104.319</td>
 <td class="num bold pos">293,1%</td>
 <td class="num bold neg">0,2%</td></tr>
-<tr class="subtot"><td></td><td>Total Joaquin (Dueño)</td><td class="num obj">$160,4 M</td><td class="num">$470,1 M</td><td class="num bold pos">293,1%</td><td class="num bold neg">0,2%</td></tr>
+<tr class="subtot"><td></td><td>Total Joaquin (Dueño)</td><td class="num obj">$160.400.000</td><td class="num">$470.104.319</td><td class="num bold pos">293,1%</td><td class="num bold neg">0,2%</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo">
-<div class="eq-head"><h2>Sin Supervisor / Otros</h2><span class="eq-nota">depósito, mayorista y resto</span><span class="eq-obj">$589,6 M <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
+<div class="eq-head"><h2>Sin Supervisor / Otros</h2><span class="eq-nota">depósito, mayorista y resto</span><span class="eq-obj">$589.636.924 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
 <tbody><tr>
 <td class="cod">20</td><td class="nom">Deposito</td>
-<td class="num obj">$4,5 M</td><td class="num bold">$6,7 M</td>
+<td class="num obj">$4.500.000</td><td class="num bold">$6.729.252</td>
 <td class="num bold pos">149,5%</td>
 <td class="num bold neg">6,0%</td></tr>
 <tr>
 <td class="cod">21</td><td class="nom">Vendedor 21</td>
-<td class="num obj">$120,7 M</td><td class="num bold">$122,6 M</td>
+<td class="num obj">$120.700.000</td><td class="num bold">$122.600.429</td>
 <td class="num bold pos">101,6%</td>
 <td class="num bold neg">15,9%</td></tr>
 <tr>
 <td class="cod">30</td><td class="nom">Vendedor 30</td>
-<td class="num obj">$1,8 M</td><td class="num bold">$0,0 M</td>
+<td class="num obj">$1.800.000</td><td class="num bold">$0</td>
 <td class="num bold neg">0,0%</td>
 <td class="num bold ">—</td></tr>
 <tr>
 <td class="cod">50</td><td class="nom">Guillermo Zeballos</td>
-<td class="num obj">$23,4 M</td><td class="num bold">$21,7 M</td>
+<td class="num obj">$23.400.000</td><td class="num bold">$21.737.451</td>
 <td class="num bold ">92,9%</td>
 <td class="num bold amb">16,0%</td></tr>
 <tr>
 <td class="cod">51</td><td class="nom">Martin Di Giorno</td>
-<td class="num obj">$205,3 M</td><td class="num bold">$438,6 M</td>
+<td class="num obj">$205.300.000</td><td class="num bold">$438.569.792</td>
 <td class="num bold pos">213,6%</td>
 <td class="num bold neg">0,4%</td></tr>
-<tr class="subtot"><td></td><td>Total Sin Supervisor / Otros</td><td class="num obj">$355,7 M</td><td class="num">$589,6 M</td><td class="num bold pos">165,8%</td><td class="num bold neg">4,2%</td></tr>
+<tr class="subtot"><td></td><td>Total Sin Supervisor / Otros</td><td class="num obj">$355.700.000</td><td class="num">$589.636.924</td><td class="num bold pos">165,8%</td><td class="num bold neg">4,2%</td></tr>
 </tbody></table></div>
 </section>
 </div>
@@ -1236,7 +1236,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <li><strong>Selector de mes:</strong> los botones de arriba de todo alternan entre el mes en curso (octubre, con avance en vivo, segmentador, filtro por proveedor y desglose) y el cierre de septiembre (objetivo original de ese mes, venta final, cumplimiento, margen y premios liquidados).</li>
 <li><strong>Filtro por proveedor:</strong> el selector de arriba muestra el tablero con la venta de un solo proveedor: ranking por venta, participación en la venta de cada vendedora, margen y tendencia de ese proveedor, combinable con los botones de equipo. El objetivo y el premio son del total del mes (no hay objetivo por proveedor), por eso en esa vista se ocultan.</li>
 </ul>
-<div class="gen">Actualizado el 9/10/2026, 10:33 · generado desde la base de Gescom</div>
+<div class="gen">Actualizado el 9/10/2026, 10:37 · generado desde la base de Gescom</div>
 </div>
 </div>
 <script>window.__SEG={"d":{"TODOS":{"obj":2904300000,"sep":2738808218.30593,"venta":941914714.4679849,"n":778441912.7834585,"c":715399089.167247,"pn":324857247.7091835,"pc":267448566.62853274,"npv":17,"nv":27,"nom":"del equipo"},"JUAN ARMANDOLA":{"obj":820000000,"sep":789589361.0513817,"venta":226891054.47024655,"n":187513268.15722853,"c":154518890.97410095,"pn":187513268.15722853,"pc":154518890.97410095,"npv":10,"nv":10,"nom":"de Juan"},"FLORENCIA LIBERA":{"obj":570000000,"sep":534123293.01907206,"venta":166186215.2578656,"n":137343979.551955,"c":112929675.65443179,"pn":137343979.551955,"pc":112929675.65443179,"npv":7,"nv":7,"nom":"de Flor"},"LUCIA CEJAS (KAF)":{"obj":380300000,"sep":355354321.0407413,"venta":101493929.30970038,"n":83879280.42124,"c":78610948.7282738,"pn":0,"pc":0,"npv":0,"nv":5,"nom":"de Luci"},"JOAQUIN (DUEÑO)":{"obj":503000000,"sep":470104319.2472,"venta":190448953.98176998,"n":157395829.737,"c":162103254.6366667,"pn":0,"pc":0,"npv":0,"nv":1,"nom":"de Joaco"},"SIN SUPERVISOR / OTROS":{"obj":631000000,"sep":589636923.9475353,"venta":256894561.44840235,"n":212309554.916035,"c":207236319.1737738,"pn":0,"pc":0,"npv":0,"nv":4,"nom":"de los canales sin supervisor"}},"ht":22,"htr":7,"mgMin":0.17,"mgLbl":"17","topeLbl":"18,5%","hayAv":true,"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"}};</script>
@@ -1246,7 +1246,7 @@ var S=window.__SEG; if(!S) return;
 var seg=document.getElementById('seg'); if(!seg) return;
 var KEY='objsep26-eq2'; // v2: ahora guarda una lista de equipos, no una sola clave
 function pl(n,d){return n.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d});}
-function M(n){return '$'+pl(n/1e6,1)+' M';}
+function M(n){return '$'+pl(Math.round(n),0);}
 function P0(n){return pl(n*100,1)+'%';}
 function P(n){return (n>=0?'+':'')+pl(n*100,1)+'%';}
 function fmg(a,b){return a?P0((a-b)/a):'—';}
@@ -1350,7 +1350,7 @@ var COLS={
 var TOPE=25, ST={};
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function pl(n,d){return n.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d});}
-function $$(n){return Math.abs(n)>=1e6?'$'+pl(n/1e6,2)+' M':'$'+pl(Math.round(n),0);}
+function $$(n){return '$'+pl(Math.round(n),0);}
 function pc(n){return pl(n*100,1)+'%';}
 function fmg(m){return m==null?'—':pc(m);}
 function mcls(m){return m==null?'':m>=D.mgMin?'pos':m>=D.mgMin-0.01?'amb':'neg';}
@@ -1493,7 +1493,7 @@ var FORMULA=document.querySelector('.formula');
 var PBOX=document.getElementById('premio-box');
 var AVISO=RANK?RANK.querySelector(':scope > .aviso'):null;
 function pl(n,d){return n.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d});}
-function $$M(n){return '$'+pl(n/1e6,1)+' M';}
+function $$M(n){return '$'+pl(Math.round(n),0);}
 function pc(n){return pl(n*100,1)+'%';}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function corto(s){return s.length>26?s.slice(0,25)+'…':s;}
