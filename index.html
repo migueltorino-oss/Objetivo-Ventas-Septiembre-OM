@@ -60,6 +60,9 @@ h2{font:700 19px/1.2 "Archivo",sans-serif;margin:0}
 .twrap{overflow-x:auto}
 table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
 .equipo table{min-width:780px}
+/* tablas de 13 columnas (Juan/Flor con margen en $): más compactas para que entren sin scroll a 1280px */
+.equipo table.anchas{font-size:13.5px}
+.equipo table.anchas td,.equipo table.anchas th{padding:7px 6px}
 th{font:600 11px/1.3 "Archivo",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);text-align:left;padding:8px 10px;border-bottom:2px solid var(--line);background:var(--head)}
 th.num{text-align:right}
 td{padding:7px 10px;border-bottom:1px solid var(--line)}
@@ -481,7 +484,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 
 <section class="equipo" data-eq="JUAN ARMANDOLA">
 <div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10 · objetivo fijado por la dirección (equivale a su septiembre × 1,04)</span><span class="eq-obj">$820.000.000</span></div>
-<div class="twrap"><table>
+<div class="twrap"><table class="anchas">
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th><th class="num" title="objetivo de octubre × 17,5% de margen">Mg obj 17,5%</th><th class="num" title="tendencia de cierre × margen actual">Mg tend $</th><th class="num" title="margen tendencia menos margen objetivo">Dif $</th><th class="num" title="la diferencia repartida en los días hábiles que quedan">Dif $/día</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">1</td><td class="nom"><button class="dtog" data-cod="1" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Fiama Jara</button></td><td class="num dim">255</td>
@@ -622,7 +625,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 </section>
 <section class="equipo" data-eq="FLORENCIA LIBERA">
 <div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38 · objetivo fijado por la dirección (equivale a su septiembre × 1,07)</span><span class="eq-obj">$570.000.000</span></div>
-<div class="twrap"><table>
+<div class="twrap"><table class="anchas">
 <thead><tr><th></th><th>Vendedor</th><th class="num">Clientes</th><th class="num">Venta Sep-26</th><th class="num">Objetivo Oct-26</th><th class="num">Venta Oct</th><th class="num">Avance</th><th class="num">Margen</th><th class="num">Tend. cierre $</th><th class="num" title="objetivo de octubre × 17,5% de margen">Mg obj 17,5%</th><th class="num" title="tendencia de cierre × margen actual">Mg tend $</th><th class="num" title="margen tendencia menos margen objetivo">Dif $</th><th class="num" title="la diferencia repartida en los días hábiles que quedan">Dif $/día</th></tr></thead>
 <tbody><tr class="vrow">
 <td class="cod">31</td><td class="nom"><button class="dtog" data-cod="31" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Nahuel Baeta</button></td><td class="num dim">288</td>
@@ -1356,7 +1359,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <li><strong>Selector de mes:</strong> los botones de arriba de todo alternan entre el mes en curso (octubre, con avance en vivo, segmentador, filtro por proveedor y desglose) y el cierre de septiembre (objetivo original de ese mes, venta final, cumplimiento, margen y premios liquidados, con el mismo desglose por proveedor, cliente y artículo al tocar cada vendedora).</li>
 <li><strong>Filtro por proveedor:</strong> el selector de arriba muestra el tablero con la venta de un solo proveedor: ranking por venta, participación en la venta de cada vendedora, margen y tendencia de ese proveedor, combinable con los botones de equipo. El objetivo y el premio son del total del mes (no hay objetivo por proveedor), por eso en esa vista se ocultan.</li>
 </ul>
-<div class="gen">Actualizado el 26/10/2026, 13:28 · generado desde la base de Gescom</div>
+<div class="gen">Actualizado el 26/10/2026, 13:30 · generado desde la base de Gescom</div>
 </div>
 </div>
 <script>window.__SEG={"d":{"TODOS":{"obj":2894000000,"sep":2738808218.30593,"venta":2005510550.880671,"n":1657446736.2650168,"c":1489536241.3224003,"pn":958611735.6755229,"pc":818405231.0916663,"npv":17,"nv":27,"nom":"del equipo"},"JUAN ARMANDOLA":{"obj":820000000,"sep":789589361.0513817,"venta":670438622.118264,"n":554081505.8828629,"c":474047059.675199,"pn":554081505.8828629,"pc":474047059.675199,"npv":10,"nv":10,"nom":"de Juan"},"FLORENCIA LIBERA":{"obj":570000000,"sep":534123293.01907206,"venta":489481578.0491186,"n":404530229.79266,"c":344358171.4164673,"pn":404530229.79266,"pc":344358171.4164673,"npv":7,"nv":7,"nom":"de Flor"},"LUCIA CEJAS (KAF)":{"obj":370000000,"sep":355354321.0407413,"venta":302085677.40918374,"n":249657584.635689,"c":229716176.93815592,"pn":0,"pc":0,"npv":0,"nv":5,"nom":"de Luci"},"JOAQUIN (DUEÑO)":{"obj":503000000,"sep":470104319.2472,"venta":199578427.12906995,"n":164940848.867,"c":169199088.0666667,"pn":0,"pc":0,"npv":0,"nv":1,"nom":"de Joaco"},"SIN SUPERVISOR / OTROS":{"obj":631000000,"sep":589636923.9475353,"venta":343926246.1750341,"n":284236567.086805,"c":272215745.2259114,"pn":0,"pc":0,"npv":0,"nv":4,"nom":"de los canales sin supervisor"}},"ht":22,"htr":18,"mgMin":0.165,"mgLbl":"16,5","topeLbl":"18,5%","hayAv":true,"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"}};</script>
