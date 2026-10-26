@@ -61,8 +61,9 @@ h2{font:700 19px/1.2 "Archivo",sans-serif;margin:0}
 table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
 .equipo table{min-width:780px}
 /* tablas de 13 columnas (Juan/Flor con margen en $): más compactas para que entren sin scroll a 1280px */
-.equipo table.anchas{font-size:13.5px}
+.equipo table.anchas{font-size:13px}
 .equipo table.anchas td,.equipo table.anchas th{padding:7px 4px}
+.equipo table.anchas th.num{white-space:normal} /* los títulos largos se parten en dos líneas y el ancho lo fija el dato */
 th{font:600 11px/1.3 "Archivo",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);text-align:left;padding:8px 10px;border-bottom:2px solid var(--line);background:var(--head)}
 th.num{text-align:right}
 td{padding:7px 10px;border-bottom:1px solid var(--line)}
@@ -494,10 +495,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">87,9%</td>
 <td class="num bold neg">14,9%</td>
 <td class="num bold pos">$104.016.262</td>
-<td class="num dim">$16,9M</td>
-<td class="num">$15,5M</td>
-<td class="num bold neg">−$1,4M</td>
-<td class="num neg">−$359.000</td></tr>
+<td class="num dim">$16.940.000</td>
+<td class="num">$15.504.620</td>
+<td class="num bold neg">$1.435.380</td>
+<td class="num neg">$358.845</td></tr>
 <tr class="drow" id="d-1" hidden><td colspan="13"><div class="dpanel" data-cod="1"></div></td></tr>
 <tr class="vrow">
 <td class="cod">2</td><td class="nom"><button class="dtog" data-cod="2" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Sofia Aquino</button></td><td class="num dim">255</td>
@@ -507,10 +508,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">83,6%</td>
 <td class="num bold neg">14,1%</td>
 <td class="num bold pos">$86.359.023</td>
-<td class="num dim">$14,8M</td>
-<td class="num">$12,2M</td>
-<td class="num bold neg">−$2,5M</td>
-<td class="num neg">−$636.000</td></tr>
+<td class="num dim">$14.787.500</td>
+<td class="num">$12.244.459</td>
+<td class="num bold neg">$2.543.041</td>
+<td class="num neg">$635.760</td></tr>
 <tr class="drow" id="d-2" hidden><td colspan="13"><div class="dpanel" data-cod="2"></div></td></tr>
 <tr class="vrow">
 <td class="cod">3</td><td class="nom"><button class="dtog" data-cod="3" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Silvia Boutet</button></td><td class="num dim">249</td>
@@ -520,10 +521,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">76,6%</td>
 <td class="num bold neg">15,2%</td>
 <td class="num bold ">$78.593.325</td>
-<td class="num dim">$14,7M</td>
-<td class="num">$12,0M</td>
-<td class="num bold neg">−$2,7M</td>
-<td class="num neg">−$682.000</td></tr>
+<td class="num dim">$14.682.500</td>
+<td class="num">$11.955.313</td>
+<td class="num bold neg">$2.727.187</td>
+<td class="num neg">$681.797</td></tr>
 <tr class="drow" id="d-3" hidden><td colspan="13"><div class="dpanel" data-cod="3"></div></td></tr>
 <tr class="vrow">
 <td class="cod">4</td><td class="nom"><button class="dtog" data-cod="4" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Rocio More</button></td><td class="num dim">285</td>
@@ -533,10 +534,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">83,0%</td>
 <td class="num bold amb">15,5%</td>
 <td class="num bold pos">$73.749.198</td>
-<td class="num dim">$12,7M</td>
-<td class="num">$11,5M</td>
-<td class="num bold neg">−$1,3M</td>
-<td class="num neg">−$314.000</td></tr>
+<td class="num dim">$12.722.500</td>
+<td class="num">$11.468.235</td>
+<td class="num bold neg">$1.254.265</td>
+<td class="num neg">$313.566</td></tr>
 <tr class="drow" id="d-4" hidden><td colspan="13"><div class="dpanel" data-cod="4"></div></td></tr>
 <tr class="vrow">
 <td class="cod">5</td><td class="nom"><button class="dtog" data-cod="5" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Samanta Machado</button></td><td class="num dim">258</td>
@@ -546,10 +547,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">86,9%</td>
 <td class="num bold neg">11,4%</td>
 <td class="num bold pos">$88.093.320</td>
-<td class="num dim">$14,5M</td>
-<td class="num">$10,1M</td>
-<td class="num bold neg">−$4,4M</td>
-<td class="num neg">−$1.106.000</td></tr>
+<td class="num dim">$14.507.500</td>
+<td class="num">$10.084.907</td>
+<td class="num bold neg">$4.422.593</td>
+<td class="num neg">$1.105.648</td></tr>
 <tr class="drow" id="d-5" hidden><td colspan="13"><div class="dpanel" data-cod="5"></div></td></tr>
 <tr class="vrow">
 <td class="cod">6</td><td class="nom"><button class="dtog" data-cod="6" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Angela Echeverria</button></td><td class="num dim">279</td>
@@ -559,10 +560,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">80,0%</td>
 <td class="num bold neg">12,3%</td>
 <td class="num bold ">$111.787.539</td>
-<td class="num dim">$20,0M</td>
-<td class="num">$13,8M</td>
-<td class="num bold neg">−$6,2M</td>
-<td class="num neg">−$1.538.000</td></tr>
+<td class="num dim">$20.002.500</td>
+<td class="num">$13.849.553</td>
+<td class="num bold neg">$6.152.947</td>
+<td class="num neg">$1.538.237</td></tr>
 <tr class="drow" id="d-6" hidden><td colspan="13"><div class="dpanel" data-cod="6"></div></td></tr>
 <tr class="vrow">
 <td class="cod">7</td><td class="nom"><button class="dtog" data-cod="7" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Lorena Escobar</button></td><td class="num dim">263</td>
@@ -572,10 +573,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">74,1%</td>
 <td class="num bold neg">15,2%</td>
 <td class="num bold ">$64.985.818</td>
-<td class="num dim">$12,6M</td>
-<td class="num">$9,9M</td>
-<td class="num bold neg">−$2,7M</td>
-<td class="num neg">−$669.000</td></tr>
+<td class="num dim">$12.565.000</td>
+<td class="num">$9.889.798</td>
+<td class="num bold neg">$2.675.202</td>
+<td class="num neg">$668.800</td></tr>
 <tr class="drow" id="d-7" hidden><td colspan="13"><div class="dpanel" data-cod="7"></div></td></tr>
 <tr class="vrow">
 <td class="cod">8</td><td class="nom"><button class="dtog" data-cod="8" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Valentina Gomez</button></td><td class="num dim">245</td>
@@ -585,10 +586,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">81,4%</td>
 <td class="num bold amb">15,8%</td>
 <td class="num bold ">$68.810.044</td>
-<td class="num dim">$12,1M</td>
-<td class="num">$10,9M</td>
-<td class="num bold neg">−$1,2M</td>
-<td class="num neg">−$294.000</td></tr>
+<td class="num dim">$12.110.000</td>
+<td class="num">$10.934.227</td>
+<td class="num bold neg">$1.175.773</td>
+<td class="num neg">$293.943</td></tr>
 <tr class="drow" id="d-8" hidden><td colspan="13"><div class="dpanel" data-cod="8"></div></td></tr>
 <tr class="vrow">
 <td class="cod">9</td><td class="nom"><button class="dtog" data-cod="9" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Pilar Fernandez</button></td><td class="num dim">252</td>
@@ -598,10 +599,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">76,5%</td>
 <td class="num bold neg">15,4%</td>
 <td class="num bold ">$63.683.176</td>
-<td class="num dim">$11,9M</td>
-<td class="num">$9,9M</td>
-<td class="num bold neg">−$2,1M</td>
-<td class="num neg">−$513.000</td></tr>
+<td class="num dim">$11.917.500</td>
+<td class="num">$9.866.337</td>
+<td class="num bold neg">$2.051.163</td>
+<td class="num neg">$512.791</td></tr>
 <tr class="drow" id="d-9" hidden><td colspan="13"><div class="dpanel" data-cod="9"></div></td></tr>
 <tr class="vrow">
 <td class="cod">10</td><td class="nom"><button class="dtog" data-cod="10" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Magali Bader</button></td><td class="num dim">268</td>
@@ -611,16 +612,16 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">85,6%</td>
 <td class="num bold amb">15,8%</td>
 <td class="num bold pos">$79.347.277</td>
-<td class="num dim">$13,3M</td>
-<td class="num">$12,6M</td>
-<td class="num bold neg">−$0,7M</td>
-<td class="num neg">−$175.000</td></tr>
+<td class="num dim">$13.265.000</td>
+<td class="num">$12.564.604</td>
+<td class="num bold neg">$700.396</td>
+<td class="num neg">$175.099</td></tr>
 <tr class="drow" id="d-10" hidden><td colspan="13"><div class="dpanel" data-cod="10"></div></td></tr>
 <tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num">2.609</td><td class="num">$789.589.361</td><td class="num obj">$820.000.000</td><td class="num">$670.438.622</td><td class="num bold ">81,8%</td><td class="num bold neg">14,4%</td><td class="num bold ">$819.424.983</td>
-<td class="num dim">$143,5M</td>
-<td class="num">$118,4M</td>
-<td class="num bold neg">−$25,1M</td>
-<td class="num neg">−$6.284.000</td></tr>
+<td class="num dim">$143.500.000</td>
+<td class="num">$118.362.053</td>
+<td class="num bold neg">$25.137.947</td>
+<td class="num neg">$6.284.487</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo" data-eq="FLORENCIA LIBERA">
@@ -635,10 +636,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">77,1%</td>
 <td class="num bold amb">16,0%</td>
 <td class="num bold ">$66.940.783</td>
-<td class="num dim">$12,4M</td>
-<td class="num">$10,7M</td>
-<td class="num bold neg">−$1,7M</td>
-<td class="num neg">−$426.000</td></tr>
+<td class="num dim">$12.425.000</td>
+<td class="num">$10.719.455</td>
+<td class="num bold neg">$1.705.545</td>
+<td class="num neg">$426.386</td></tr>
 <tr class="drow" id="d-31" hidden><td colspan="13"><div class="dpanel" data-cod="31"></div></td></tr>
 <tr class="vrow">
 <td class="cod">32</td><td class="nom"><button class="dtog" data-cod="32" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Carolina Echeverria</button></td><td class="num dim">281</td>
@@ -648,10 +649,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">89,0%</td>
 <td class="num bold neg">14,9%</td>
 <td class="num bold pos">$85.979.684</td>
-<td class="num dim">$13,8M</td>
-<td class="num">$12,8M</td>
-<td class="num bold neg">−$1,0M</td>
-<td class="num neg">−$252.000</td></tr>
+<td class="num dim">$13.825.000</td>
+<td class="num">$12.815.141</td>
+<td class="num bold neg">$1.009.859</td>
+<td class="num neg">$252.465</td></tr>
 <tr class="drow" id="d-32" hidden><td colspan="13"><div class="dpanel" data-cod="32"></div></td></tr>
 <tr class="vrow">
 <td class="cod">33</td><td class="nom"><button class="dtog" data-cod="33" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Sofia Cativiela</button></td><td class="num dim">253</td>
@@ -661,10 +662,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">85,6%</td>
 <td class="num bold neg">14,0%</td>
 <td class="num bold pos">$122.422.720</td>
-<td class="num dim">$20,5M</td>
-<td class="num">$17,2M</td>
-<td class="num bold neg">−$3,3M</td>
-<td class="num neg">−$830.000</td></tr>
+<td class="num dim">$20.475.000</td>
+<td class="num">$17.154.973</td>
+<td class="num bold neg">$3.320.027</td>
+<td class="num neg">$830.007</td></tr>
 <tr class="drow" id="d-33" hidden><td colspan="13"><div class="dpanel" data-cod="33"></div></td></tr>
 <tr class="vrow">
 <td class="cod">34</td><td class="nom"><button class="dtog" data-cod="34" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Natalia Polito</button></td><td class="num dim">297</td>
@@ -674,10 +675,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">95,3%</td>
 <td class="num bold neg">14,5%</td>
 <td class="num bold pos">$76.892.061</td>
-<td class="num dim">$11,6M</td>
-<td class="num">$11,2M</td>
-<td class="num bold neg">−$0,4M</td>
-<td class="num neg">−$93.000</td></tr>
+<td class="num dim">$11.550.000</td>
+<td class="num">$11.179.141</td>
+<td class="num bold neg">$370.859</td>
+<td class="num neg">$92.715</td></tr>
 <tr class="drow" id="d-34" hidden><td colspan="13"><div class="dpanel" data-cod="34"></div></td></tr>
 <tr class="vrow">
 <td class="cod">35</td><td class="nom"><button class="dtog" data-cod="35" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Ivana Castillo</button></td><td class="num dim">280</td>
@@ -687,10 +688,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">95,3%</td>
 <td class="num bold neg">15,0%</td>
 <td class="num bold pos">$85.010.444</td>
-<td class="num dim">$12,8M</td>
-<td class="num">$12,8M</td>
-<td class="num bold neg">−$0,0M</td>
-<td class="num neg">−$2.000</td></tr>
+<td class="num dim">$12.775.000</td>
+<td class="num">$12.768.347</td>
+<td class="num bold neg">$6.653</td>
+<td class="num neg">$1.663</td></tr>
 <tr class="drow" id="d-35" hidden><td colspan="13"><div class="dpanel" data-cod="35"></div></td></tr>
 <tr class="vrow">
 <td class="cod">37</td><td class="nom"><button class="dtog" data-cod="37" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Aylen Blanco</button></td><td class="num dim">298</td>
@@ -700,10 +701,10 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">77,4%</td>
 <td class="num bold neg">14,5%</td>
 <td class="num bold ">$87.023.891</td>
-<td class="num dim">$16,1M</td>
-<td class="num">$12,7M</td>
-<td class="num bold neg">−$3,4M</td>
-<td class="num neg">−$856.000</td></tr>
+<td class="num dim">$16.100.000</td>
+<td class="num">$12.677.875</td>
+<td class="num bold neg">$3.422.125</td>
+<td class="num neg">$855.531</td></tr>
 <tr class="drow" id="d-37" hidden><td colspan="13"><div class="dpanel" data-cod="37"></div></td></tr>
 <tr class="vrow">
 <td class="cod">38</td><td class="nom"><button class="dtog" data-cod="38" aria-expanded="false" title="Ver desglose de lo vendido"><span class="chev">▸</span>Maria Victoria Zerda</button></td><td class="num dim">264</td>
@@ -713,16 +714,16 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">84,1%</td>
 <td class="num bold amb">15,7%</td>
 <td class="num bold pos">$73.985.679</td>
-<td class="num dim">$12,6M</td>
-<td class="num">$11,7M</td>
-<td class="num bold neg">−$0,9M</td>
-<td class="num neg">−$232.000</td></tr>
+<td class="num dim">$12.600.000</td>
+<td class="num">$11.672.856</td>
+<td class="num bold neg">$927.144</td>
+<td class="num neg">$231.786</td></tr>
 <tr class="drow" id="d-38" hidden><td colspan="13"><div class="dpanel" data-cod="38"></div></td></tr>
 <tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num">1.961</td><td class="num">$534.123.293</td><td class="num obj">$570.000.000</td><td class="num">$489.481.578</td><td class="num bold pos">85,9%</td><td class="num bold neg">14,8%</td><td class="num bold pos">$598.255.262</td>
-<td class="num dim">$99,8M</td>
-<td class="num">$89,0M</td>
-<td class="num bold neg">−$10,8M</td>
-<td class="num neg">−$2.691.000</td></tr>
+<td class="num dim">$99.750.000</td>
+<td class="num">$88.987.789</td>
+<td class="num bold neg">$10.762.211</td>
+<td class="num neg">$2.690.553</td></tr>
 </tbody></table></div>
 </section>
 <section class="equipo" data-eq="LUCIA CEJAS (KAF)">
@@ -1354,12 +1355,12 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <li>Margen = rentabilidad ÷ venta neta sin IVA (mismo criterio del tablero de ventas; costo por bulto real). Se mide sobre TODO lo vendido en el mes por la ruta, con devoluciones descontadas.</li>
 <li><strong>Premio escalonado:</strong> exclusivo de las 17 rutas de preventa (KAF y canales tienen dinámica de acuerdos propia) y se liquida con el mes cerrado. <strong>Llegar al 100% del objetivo de venta es condición de entrada</strong> — sin eso no se cobra nada, por más margen que haya. Cumplido el objetivo, el monto lo fija el margen de cierre: 16,5% → $50.000 · 17% → $100.000 · 17,5% → $150.000 · 18% → $200.000 · desde 18,5% → $220.000. Los umbrales son piso, así que cada tramo corre hasta el siguiente: cerrar 16,8% paga el tramo de 16,5%, el tramo de 18% llega hasta 18,4% y <strong>desde 18,5%</strong> se cobra el tope de $220.000. La columna Premio del ranking muestra el monto que le corresponde por su margen de hoy y cuántos puntos le faltan para el tramo siguiente.</li>
 <li><strong>Segmentador:</strong> los botones de arriba filtran el tablero por supervisor. Al elegir uno, los cinco KPIs, la fórmula del objetivo, el ranking del mes y las tablas quedan sólo con su equipo — el objetivo de cada equipo es <strong>su propio septiembre × 1,20</strong>, así que los cinco suman el total. La elección queda guardada en el navegador de cada uno. Joaquín no participa del ranking del premio, por eso en su vista no aparece.</li>
-<li><strong>Columnas de margen en $ (equipos de Juan y Flor):</strong> «Mg obj 17,5%» es el margen en plata que el objetivo lleva implícito (objetivo de octubre × 17,5%); «Mg tend $» es el margen al que llega si sigue así (tendencia de cierre × margen actual); «Dif $» es cuánto le falta o le sobra entre una y otra, y «Dif $/día» reparte esa diferencia en los 4 días hábiles que quedan: el margen extra por día que hay que hacer para cerrar en 17,5%.</li>
+<li><strong>Columnas de margen en $ (equipos de Juan y Flor):</strong> «Mg obj 17,5%» es el margen en plata que el objetivo lleva implícito (objetivo de octubre × 17,5%); «Mg tend $» es el margen al que llega si sigue así (tendencia de cierre × margen actual); «Dif $» es cuánto le falta o le sobra entre una y otra, y «Dif $/día» reparte esa diferencia en los 4 días hábiles que quedan: el margen extra por día que hay que hacer para cerrar en 17,5%. Las dos diferencias van en valor absoluto: <strong>rojo = falta, verde = sobra</strong>.</li>
 <li><strong>Desglose:</strong> tocá el nombre de una vendedora en las tablas por supervisor para abrir el detalle de lo que vendió en el mes, por proveedor, por cliente y por artículo. Las tres vistas suman exactamente su venta del mes; se pueden buscar, ordenar por cualquier columna y los artículos filtrar por proveedor.</li>
 <li><strong>Selector de mes:</strong> los botones de arriba de todo alternan entre el mes en curso (octubre, con avance en vivo, segmentador, filtro por proveedor y desglose) y el cierre de septiembre (objetivo original de ese mes, venta final, cumplimiento, margen y premios liquidados, con el mismo desglose por proveedor, cliente y artículo al tocar cada vendedora).</li>
 <li><strong>Filtro por proveedor:</strong> el selector de arriba muestra el tablero con la venta de un solo proveedor: ranking por venta, participación en la venta de cada vendedora, margen y tendencia de ese proveedor, combinable con los botones de equipo. El objetivo y el premio son del total del mes (no hay objetivo por proveedor), por eso en esa vista se ocultan.</li>
 </ul>
-<div class="gen">Actualizado el 26/10/2026, 13:32 · generado desde la base de Gescom</div>
+<div class="gen">Actualizado el 26/10/2026, 13:40 · generado desde la base de Gescom</div>
 </div>
 </div>
 <script>window.__SEG={"d":{"TODOS":{"obj":2894000000,"sep":2738808218.30593,"venta":2005510550.880671,"n":1657446736.2650168,"c":1489536241.3224003,"pn":958611735.6755229,"pc":818405231.0916663,"npv":17,"nv":27,"nom":"del equipo"},"JUAN ARMANDOLA":{"obj":820000000,"sep":789589361.0513817,"venta":670438622.118264,"n":554081505.8828629,"c":474047059.675199,"pn":554081505.8828629,"pc":474047059.675199,"npv":10,"nv":10,"nom":"de Juan"},"FLORENCIA LIBERA":{"obj":570000000,"sep":534123293.01907206,"venta":489481578.0491186,"n":404530229.79266,"c":344358171.4164673,"pn":404530229.79266,"pc":344358171.4164673,"npv":7,"nv":7,"nom":"de Flor"},"LUCIA CEJAS (KAF)":{"obj":370000000,"sep":355354321.0407413,"venta":302085677.40918374,"n":249657584.635689,"c":229716176.93815592,"pn":0,"pc":0,"npv":0,"nv":5,"nom":"de Luci"},"JOAQUIN (DUEÑO)":{"obj":503000000,"sep":470104319.2472,"venta":199578427.12906995,"n":164940848.867,"c":169199088.0666667,"pn":0,"pc":0,"npv":0,"nv":1,"nom":"de Joaco"},"SIN SUPERVISOR / OTROS":{"obj":631000000,"sep":589636923.9475353,"venta":343926246.1750341,"n":284236567.086805,"c":272215745.2259114,"pn":0,"pc":0,"npv":0,"nv":4,"nom":"de los canales sin supervisor"}},"ht":22,"htr":18,"mgMin":0.165,"mgLbl":"16,5","topeLbl":"18,5%","hayAv":true,"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"}};</script>
