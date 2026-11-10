@@ -788,20 +788,27 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <div id="vista-oct" hidden>
 <p class="sub">Cómo terminó octubre contra su objetivo (cierre de septiembre +7% por vendedora, con Juan, Flor y Luci fijados por la dirección). Mes cerrado: venta final con devoluciones descontadas y premio según las reglas de octubre.</p>
 
-<div class="kpis">
-<div class="kpi"><div class="l">Objetivo de octubre</div><div class="v">$2.894.000.000</div><div class="n">septiembre × 1,07 · Juan, Flor y Luci fijados por la dirección</div></div>
-<div class="kpi"><div class="l">Cierre del mes</div><div class="v verde">$2.889.723.334</div><div class="n">venta final c/IVA, devoluciones descontadas</div></div>
-<div class="kpi"><div class="l">Cumplimiento</div><div class="v ">99,9%</div><div class="n">$4.276.666 por debajo del objetivo</div></div>
-<div class="kpi"><div class="l">Margen preventa final</div><div class="v ">15,2%</div><div class="n">17 rutas · piso del premio: 16,5%</div></div>
-<div class="kpi"><div class="l">Premios ganados</div><div class="v">$890.000</div><div class="n">Romina Merello · Gaby Peralta · Maria Jose · Daniel Sanchez · Nahuel Baeta</div></div>
+<div class="seg" id="oct-seg">
+<span class="seg-l">Ver equipo</span>
+<button class="segb" data-k="TODOS" aria-pressed="true">Todos</button>
+<button class="segb" data-k="JUAN ARMANDOLA" aria-pressed="false">Juan</button><button class="segb" data-k="FLORENCIA LIBERA" aria-pressed="false">Flor</button><button class="segb" data-k="LUCIA CEJAS (KAF)" aria-pressed="false">Luci</button><button class="segb" data-k="JOAQUIN (DUEÑO)" aria-pressed="false">Joaco</button><button class="segb" data-k="SIN SUPERVISOR / OTROS" aria-pressed="false">Sin supervisor</button>
+<span class="seg-hint">Podés marcar varios equipos a la vez: objetivo, cierre, cumplimiento, margen y premios se suman. «Todos» vuelve al cierre completo.</span>
 </div>
-<div class="formula"><span>Septiembre del equipo</span><b>$2.738.808.218</b><span class="op">×</span><span>crecimiento objetivo</span><b>1,06</b><span class="op">=</span><span>objetivo</span><b>$2.894.000.000</b><span class="op">·</span><span>cierre de septiembre +7,0% por vendedora; Juan, Flor y Luci con montos fijados por la dirección</span></div>
-<section class="equipo">
+<script>window.__CIE=window.__CIE||{};window.__CIE["oct"]={"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"},"d":{"JUAN ARMANDOLA":{"obj":820000000,"vv":860598857.9488668,"base":789589361.0513817,"n":711238725.5775757,"c":604578985.5424169,"pn":711238725.5775757,"pc":604578985.5424169,"npv":10,"nv":10,"prem":0,"pl":[]},"FLORENCIA LIBERA":{"obj":570000000,"vv":625501593.0988495,"base":534123293.01907206,"n":516943465.37094986,"c":436220430.36646116,"pn":516943465.37094986,"pc":436220430.36646116,"npv":7,"nv":7,"prem":50000,"pl":[{"m":50000,"s":"Nahuel Baeta","t":"Nahuel Baeta ($50.000, cumplimiento 101,5%, margen 16,8%)"}]},"LUCIA CEJAS (KAF)":{"obj":370000000,"vv":428552392.07598746,"base":355354321.0407413,"n":354175530.64131176,"c":326856273.9841327,"pn":0,"pc":0,"npv":0,"nv":5,"prem":840000,"pl":[{"m":220000,"s":"Romina Merello","t":"Kaf Romina Merello ($220.000, cumplimiento 126,1%, por volumen)"},{"m":220000,"s":"Gaby Peralta","t":"Kaf Gaby Peralta ($220.000, cumplimiento 122,2%, por volumen)"},{"m":200000,"s":"Maria Jose","t":"Kaf Maria Jose Minio ($200.000, cumplimiento 107,6%, por volumen)"},{"m":200000,"s":"Daniel Sanchez","t":"Kaf Daniel Sanchez ($200.000, cumplimiento 102,9%, por volumen)"}]},"JOAQUIN (DUEÑO)":{"obj":503000000,"vv":377873225.96242994,"base":470104319.2472,"n":312291922.283,"c":317572497.98666674,"pn":0,"pc":0,"npv":0,"nv":1,"prem":0,"pl":[]},"SIN SUPERVISOR / OTROS":{"obj":631000000,"vv":597197264.7457416,"base":589636923.9475353,"n":493551458.46755505,"c":479207140.4486138,"pn":0,"pc":0,"npv":0,"nv":4,"prem":0,"pl":[]}},"piso":0.165,"pisoLbl":"16,5%"};</script>
+<div class="kpis">
+<div class="kpi"><div class="l" id="oct-k1l">Objetivo de octubre</div><div class="v" id="oct-k1v">$2.894.000.000</div><div class="n" id="oct-k1n">septiembre × 1,07 · Juan, Flor y Luci fijados por la dirección</div></div>
+<div class="kpi"><div class="l">Cierre del mes</div><div class="v verde" id="oct-k2v">$2.889.723.334</div><div class="n">venta final c/IVA, devoluciones descontadas</div></div>
+<div class="kpi"><div class="l">Cumplimiento</div><div class="v " id="oct-k3v">99,9%</div><div class="n" id="oct-k3n">$4.276.666 por debajo del objetivo</div></div>
+<div class="kpi"><div class="l" id="oct-k4l">Margen preventa final</div><div class="v " id="oct-k4v">15,2%</div><div class="n" id="oct-k4n">17 rutas · piso del premio: 16,5%</div></div>
+<div class="kpi"><div class="l">Premios ganados</div><div class="v" id="oct-k5v">$890.000</div><div class="n" id="oct-k5n">Romina Merello · Gaby Peralta · Maria Jose · Daniel Sanchez · Nahuel Baeta</div></div>
+</div>
+<div class="formula"><span id="oct-fn">Septiembre del equipo</span><b id="oct-f0">$2.738.808.218</b><span class="op">×</span><span>crecimiento objetivo</span><b id="oct-f1">1,06</b><span class="op">=</span><span>objetivo</span><b id="oct-f2">$2.894.000.000</b><span class="op">·</span><span>cierre de septiembre +7,0% por vendedora; Juan, Flor y Luci con montos fijados por la dirección</span></div>
+<section class="equipo" id="oct-rank">
 <div class="eq-head"><h2>Resultado final del mes</h2><span class="eq-nota">mes cerrado · 22 de 22 días hábiles · premio preventa: 100% del objetivo + margen (16,5%→$50.000 · 17%→$100.000 · 17,5%→$150.000 · 18%→$200.000 · desde 18,5%→$220.000) · Luci (KAF): sólo volumen (100% → $200.000 · 110% → $210.000 · más de 120% → $220.000)</span></div>
 <div class="twrap"><table class="rank">
 <thead><tr><th>#</th><th>Vendedor</th><th class="num">Objetivo</th><th class="num">Cierre Oct</th><th class="num">Cumplimiento</th><th style="min-width:160px"></th><th class="num">Margen</th><th class="num">Premio</th><th>Estado</th></tr></thead>
-<tbody><tr>
-<td class="cod">1</td>
+<tbody><tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">1</span></td>
 <td class="nom">Natalia Polito <span class="eqtag">Flor</span></td>
 <td class="num">$66.000.000</td>
 <td class="num bold">$86.330.006</td>
@@ -810,8 +817,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">15,6%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆2</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">2</span></td>
 <td class="nom">Kaf Romina Merello <span class="eqtag">Luci</span></td>
 <td class="num">$106.000.000</td>
 <td class="num bold">$133.673.011</td>
@@ -820,8 +827,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">5,8%</td>
 <td class="num"><span class="bold pos">$220.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆3</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">3</span></td>
 <td class="nom">Kaf Gaby Peralta <span class="eqtag">Luci</span></td>
 <td class="num">$105.000.000</td>
 <td class="num bold">$128.349.050</td>
@@ -830,8 +837,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">8,2%</td>
 <td class="num"><span class="bold pos">$220.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">4</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">4</span></td>
 <td class="nom">Ivana Castillo <span class="eqtag">Flor</span></td>
 <td class="num">$73.000.000</td>
 <td class="num bold">$85.699.822</td>
@@ -840,8 +847,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">15,6%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">5</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">5</span></td>
 <td class="nom">Fiama Jara <span class="eqtag">Juan</span></td>
 <td class="num">$96.800.000</td>
 <td class="num bold">$110.211.396</td>
@@ -850,8 +857,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">14,9%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">6</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">6</span></td>
 <td class="nom">Carolina Echeverria <span class="eqtag">Flor</span></td>
 <td class="num">$79.000.000</td>
 <td class="num bold">$87.197.435</td>
@@ -860,8 +867,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">15,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">7</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">7</span></td>
 <td class="nom">Rocio More <span class="eqtag">Juan</span></td>
 <td class="num">$72.700.000</td>
 <td class="num bold">$79.975.260</td>
@@ -870,8 +877,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">15,8%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">8</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">8</span></td>
 <td class="nom">Sofia Aquino <span class="eqtag">Juan</span></td>
 <td class="num">$84.500.000</td>
 <td class="num bold">$91.663.198</td>
@@ -880,8 +887,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">14,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">9</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">9</span></td>
 <td class="nom">Angela Echeverria <span class="eqtag">Juan</span></td>
 <td class="num">$114.300.000</td>
 <td class="num bold">$123.922.815</td>
@@ -890,8 +897,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">13,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆10</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">10</span></td>
 <td class="nom">Kaf Maria Jose Minio <span class="eqtag">Luci</span></td>
 <td class="num">$90.000.000</td>
 <td class="num bold">$96.849.238</td>
@@ -900,8 +907,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">8,2%</td>
 <td class="num"><span class="bold pos">$200.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">11</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">11</span></td>
 <td class="nom">Maria Victoria Zerda <span class="eqtag">Flor</span></td>
 <td class="num">$72.000.000</td>
 <td class="num bold">$76.484.770</td>
@@ -910,8 +917,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">16,3%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">12</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">12</span></td>
 <td class="nom">Magali Bader <span class="eqtag">Juan</span></td>
 <td class="num">$75.800.000</td>
 <td class="num bold">$79.204.390</td>
@@ -920,8 +927,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">16,3%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">13</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">13</span></td>
 <td class="nom">Sofia Cativiela <span class="eqtag">Flor</span></td>
 <td class="num">$117.000.000</td>
 <td class="num bold">$121.971.750</td>
@@ -930,8 +937,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">14,6%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">14</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">14</span></td>
 <td class="nom">Aylen Blanco <span class="eqtag">Flor</span></td>
 <td class="num">$92.000.000</td>
 <td class="num bold">$95.720.142</td>
@@ -940,8 +947,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">15,3%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">15</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">15</span></td>
 <td class="nom">Valentina Gomez <span class="eqtag">Juan</span></td>
 <td class="num">$69.200.000</td>
 <td class="num bold">$71.268.222</td>
@@ -950,8 +957,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">16,2%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆16</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">16</span></td>
 <td class="nom">Kaf Daniel Sanchez <span class="eqtag">Luci</span></td>
 <td class="num">$55.000.000</td>
 <td class="num bold">$56.582.532</td>
@@ -960,8 +967,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">8,2%</td>
 <td class="num"><span class="bold pos">$200.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">17</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">17</span></td>
 <td class="nom">Pilar Fernandez <span class="eqtag">Juan</span></td>
 <td class="num">$68.100.000</td>
 <td class="num bold">$69.796.527</td>
@@ -970,8 +977,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">16,1%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">18</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">18</span></td>
 <td class="nom">Samanta Machado <span class="eqtag">Juan</span></td>
 <td class="num">$82.900.000</td>
 <td class="num bold">$84.593.969</td>
@@ -980,8 +987,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">12,2%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">margen bajo el piso</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆19</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod">🏆<span class="rn">19</span></td>
 <td class="nom">Nahuel Baeta <span class="eqtag">Flor</span></td>
 <td class="num">$71.000.000</td>
 <td class="num bold">$72.097.668</td>
@@ -990,8 +997,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">16,8%</td>
 <td class="num"><span class="bold pos">$50.000</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">20</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">20</span></td>
 <td class="nom">Martin Di Giorno <span class="eqtag">Otros</span></td>
 <td class="num">$469.300.000</td>
 <td class="num bold">$475.098.918</td>
@@ -1000,8 +1007,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">0,3%</td>
 <td class="num dim">—</td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">21</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">21</span></td>
 <td class="nom">Silvia Boutet <span class="eqtag">Juan</span></td>
 <td class="num">$83.900.000</td>
 <td class="num bold">$80.897.497</td>
@@ -1010,8 +1017,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">15,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">22</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">22</span></td>
 <td class="nom">Lorena Escobar <span class="eqtag">Juan</span></td>
 <td class="num">$71.800.000</td>
 <td class="num bold">$69.065.584</td>
@@ -1020,8 +1027,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">15,9%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">23</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod"><span class="rn">23</span></td>
 <td class="nom">Vendedor 28 Kaf <span class="eqtag">Luci</span></td>
 <td class="num">$14.000.000</td>
 <td class="num bold">$13.098.561</td>
@@ -1030,8 +1037,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">15,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">24</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">24</span></td>
 <td class="nom">Vendedor 21 <span class="eqtag">Otros</span></td>
 <td class="num">$131.200.000</td>
 <td class="num bold">$102.449.361</td>
@@ -1040,8 +1047,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">13,0%</td>
 <td class="num dim">—</td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">25</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">25</span></td>
 <td class="nom">Guillermo Zeballos <span class="eqtag">Otros</span></td>
 <td class="num">$23.300.000</td>
 <td class="num bold">$15.806.726</td>
@@ -1050,8 +1057,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">12,1%</td>
 <td class="num dim">—</td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">26</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">26</span></td>
 <td class="nom">Deposito <span class="eqtag">Otros</span></td>
 <td class="num">$7.200.000</td>
 <td class="num bold">$3.842.259</td>
@@ -1060,9 +1067,9 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">10,9%</td>
 <td class="num dim">—</td>
 <td><span class="pill bad">No llegó</span></td></tr></tbody></table></div>
-<p class="aviso">La línea vertical marca el 100% del objetivo. Ganaron el premio: Kaf Romina Merello ($220.000, cumplimiento 126,1%, por volumen) · Kaf Gaby Peralta ($220.000, cumplimiento 122,2%, por volumen) · Kaf Maria Jose Minio ($200.000, cumplimiento 107,6%, por volumen) · Kaf Daniel Sanchez ($200.000, cumplimiento 102,9%, por volumen) · Nahuel Baeta ($50.000, cumplimiento 101,5%, margen 16,8%) — total $890.000. <strong>Para ver el detalle de lo vendido en octubre (proveedor, cliente y artículo) tocá el nombre de la vendedora en las tablas por supervisor de abajo.</strong> El segmentador y el filtro por proveedor están en la vista de Noviembre.</p>
+<p class="aviso">La línea vertical marca el 100% del objetivo. <span id="oct-avp">Ganaron el premio: Kaf Romina Merello ($220.000, cumplimiento 126,1%, por volumen) · Kaf Gaby Peralta ($220.000, cumplimiento 122,2%, por volumen) · Kaf Maria Jose Minio ($200.000, cumplimiento 107,6%, por volumen) · Kaf Daniel Sanchez ($200.000, cumplimiento 102,9%, por volumen) · Nahuel Baeta ($50.000, cumplimiento 101,5%, margen 16,8%) — total $890.000.</span> <strong>Para ver el detalle de lo vendido en octubre (proveedor, cliente y artículo) tocá el nombre de la vendedora en las tablas por supervisor de abajo.</strong> El filtro por proveedor está en la vista de Noviembre.</p>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="JUAN ARMANDOLA">
 <div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10</span><span class="eq-obj">$860.598.858 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Oct-26</th><th class="num">Cierre Oct-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1129,7 +1136,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num obj">$820.000.000</td><td class="num">$860.598.858</td><td class="num bold pos">105,0%</td><td class="num bold neg">14,9%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="FLORENCIA LIBERA">
 <div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38</span><span class="eq-obj">$625.501.593 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Oct-26</th><th class="num">Cierre Oct-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1178,7 +1185,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num obj">$570.000.000</td><td class="num">$625.501.593</td><td class="num bold pos">109,7%</td><td class="num bold amb">15,6%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="LUCIA CEJAS (KAF)">
 <div class="eq-head"><h2>Lucia Cejas (Kaf)</h2><span class="eq-nota">cuentas clave · cód. 24-28 · sin mayoristas regionales</span><span class="eq-obj">$428.552.392 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Oct-26</th><th class="num">Cierre Oct-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1215,7 +1222,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Lucia Cejas (Kaf)</td><td class="num obj">$370.000.000</td><td class="num">$428.552.392</td><td class="num bold pos">115,8%</td><td class="num bold ">7,7%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="JOAQUIN (DUEÑO)">
 <div class="eq-head"><h2>Joaquin (Dueño)</h2><span class="eq-nota">subramo Mayoristas Regional · facturado vía KAF</span><span class="eq-obj">$377.873.226 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Oct-26</th><th class="num">Cierre Oct-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1228,7 +1235,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Joaquin (Dueño)</td><td class="num obj">$503.000.000</td><td class="num">$377.873.226</td><td class="num bold ">75,1%</td><td class="num bold ">-1,7%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="SIN SUPERVISOR / OTROS">
 <div class="eq-head"><h2>Sin Supervisor / Otros</h2><span class="eq-nota">depósito, mayorista y resto</span><span class="eq-obj">$597.197.265 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Oct-26</th><th class="num">Cierre Oct-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1263,20 +1270,27 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <div id="vista-sep" hidden>
 <p class="sub">Cómo terminó septiembre contra su objetivo original (agosto × 1,08, metodología de ese mes). Mes cerrado: venta final con devoluciones descontadas y premios liquidados.</p>
 
-<div class="kpis">
-<div class="kpi"><div class="l">Objetivo de septiembre</div><div class="v">$2.297.100.000</div><div class="n">agosto × 1,08 por equipo (metodología de sep)</div></div>
-<div class="kpi"><div class="l">Cierre del mes</div><div class="v verde">$2.738.808.218</div><div class="n">venta final c/IVA, devoluciones descontadas</div></div>
-<div class="kpi"><div class="l">Cumplimiento</div><div class="v verde">119,2%</div><div class="n">$441.708.218 por encima del objetivo</div></div>
-<div class="kpi"><div class="l">Margen preventa final</div><div class="v verde">17,3%</div><div class="n">17 rutas · piso del premio: 17%</div></div>
-<div class="kpi"><div class="l">Premios ganados</div><div class="v">$1.040.000</div><div class="n">Magali Bader · Romina Merello · Gaby Peralta · Vendedor 28 · Sofia Cativiela · Silvia Boutet</div></div>
+<div class="seg" id="sep-seg">
+<span class="seg-l">Ver equipo</span>
+<button class="segb" data-k="TODOS" aria-pressed="true">Todos</button>
+<button class="segb" data-k="JUAN ARMANDOLA" aria-pressed="false">Juan</button><button class="segb" data-k="FLORENCIA LIBERA" aria-pressed="false">Flor</button><button class="segb" data-k="LUCIA CEJAS (KAF)" aria-pressed="false">Luci</button><button class="segb" data-k="JOAQUIN (DUEÑO)" aria-pressed="false">Joaco</button><button class="segb" data-k="SIN SUPERVISOR / OTROS" aria-pressed="false">Sin supervisor</button>
+<span class="seg-hint">Podés marcar varios equipos a la vez: objetivo, cierre, cumplimiento, margen y premios se suman. «Todos» vuelve al cierre completo.</span>
 </div>
-<div class="formula"><span>Agosto del equipo</span><b>$2.127.201.062</b><span class="op">×</span><span>crecimiento objetivo</span><b>1,08</b><span class="op">=</span><span>objetivo</span><b>$2.297.100.000</b><span class="op">·</span><span>metodología de septiembre: nivel de agosto por equipo, repartido por promedio jun–ago con la cartera vigente</span></div>
-<section class="equipo">
+<script>window.__CIE=window.__CIE||{};window.__CIE["sep"]={"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"},"d":{"JUAN ARMANDOLA":{"obj":842200000,"vv":789589361.0513817,"base":779943791.4766791,"n":652553190.9515555,"c":541562703.8798046,"pn":652553190.9515555,"pc":541562703.8798046,"npv":10,"nv":10,"prem":320000,"pl":[{"m":220000,"s":"Magali Bader","t":"Magali Bader ($220.000, cumplimiento 100,0%, margen 18,6%)"},{"m":100000,"s":"Silvia Boutet","t":"Silvia Boutet ($100.000, cumplimiento 102,7%, margen 17,1%)"}]},"FLORENCIA LIBERA":{"obj":573400000,"vv":534123293.01907206,"base":530928051.2094686,"n":441424209.1066712,"c":362176913.44029737,"pn":441424209.1066712,"pc":362176913.44029737,"npv":7,"nv":7,"prem":100000,"pl":[{"m":100000,"s":"Sofia Cativiela","t":"Sofia Cativiela ($100.000, cumplimiento 115,9%, margen 17,2%)"}]},"LUCIA CEJAS (KAF)":{"obj":365400000,"vv":355354321.0407413,"base":338351099.4025193,"n":293681257.058464,"c":275575119.02610314,"pn":0,"pc":0,"npv":0,"nv":5,"prem":620000,"pl":[{"m":210000,"s":"Romina Merello","t":"Kaf Romina Merello ($210.000, cumplimiento 113,5%, por volumen)"},{"m":210000,"s":"Gaby Peralta","t":"Kaf Gaby Peralta ($210.000, cumplimiento 111,4%, por volumen)"},{"m":200000,"s":"Vendedor 28","t":"Vendedor 28 Kaf ($200.000, cumplimiento 100,1%, por volumen)"}]},"JOAQUIN (DUEÑO)":{"obj":160400000,"vv":470104319.2472,"base":148498773.85463998,"n":388515966.31999993,"c":387363831.31,"pn":0,"pc":0,"npv":0,"nv":1,"prem":0,"pl":[]},"SIN SUPERVISOR / OTROS":{"obj":355700000,"vv":589636923.9475353,"base":329479346.4861983,"n":487303242.93184745,"c":466488757.2239007,"pn":0,"pc":0,"npv":0,"nv":5,"prem":0,"pl":[]}},"piso":0.17,"pisoLbl":"17%"};</script>
+<div class="kpis">
+<div class="kpi"><div class="l" id="sep-k1l">Objetivo de septiembre</div><div class="v" id="sep-k1v">$2.297.100.000</div><div class="n" id="sep-k1n">agosto × 1,08 por equipo (metodología de sep)</div></div>
+<div class="kpi"><div class="l">Cierre del mes</div><div class="v verde" id="sep-k2v">$2.738.808.218</div><div class="n">venta final c/IVA, devoluciones descontadas</div></div>
+<div class="kpi"><div class="l">Cumplimiento</div><div class="v verde" id="sep-k3v">119,2%</div><div class="n" id="sep-k3n">$441.708.218 por encima del objetivo</div></div>
+<div class="kpi"><div class="l" id="sep-k4l">Margen preventa final</div><div class="v verde" id="sep-k4v">17,3%</div><div class="n" id="sep-k4n">17 rutas · piso del premio: 17%</div></div>
+<div class="kpi"><div class="l">Premios ganados</div><div class="v" id="sep-k5v">$1.040.000</div><div class="n" id="sep-k5n">Magali Bader · Romina Merello · Gaby Peralta · Vendedor 28 · Sofia Cativiela · Silvia Boutet</div></div>
+</div>
+<div class="formula"><span id="sep-fn">Agosto del equipo</span><b id="sep-f0">$2.127.201.062</b><span class="op">×</span><span>crecimiento objetivo</span><b id="sep-f1">1,08</b><span class="op">=</span><span>objetivo</span><b id="sep-f2">$2.297.100.000</b><span class="op">·</span><span>metodología de septiembre: nivel de agosto por equipo, repartido por promedio jun–ago con la cartera vigente</span></div>
+<section class="equipo" id="sep-rank">
 <div class="eq-head"><h2>Resultado final del mes</h2><span class="eq-nota">mes cerrado · 22 de 22 días hábiles · premio preventa: 100% del objetivo + margen (17%→$100.000 · 17,5%→$150.000 · 18%→$200.000 · desde 18,5%→$220.000) · Luci (KAF): sólo volumen (100% → $200.000 · 110% → $210.000 · más de 120% → $220.000)</span></div>
 <div class="twrap"><table class="rank">
 <thead><tr><th>#</th><th>Vendedor</th><th class="num">Objetivo</th><th class="num">Cierre Sep</th><th class="num">Cumplimiento</th><th style="min-width:160px"></th><th class="num">Margen</th><th class="num">Premio</th><th>Estado</th></tr></thead>
-<tbody><tr>
-<td class="cod">1</td>
+<tbody><tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">1</span></td>
 <td class="nom">Martin Di Giorno <span class="eqtag">Otros</span></td>
 <td class="num">$205.300.000</td>
 <td class="num bold">$438.569.792</td>
@@ -1285,8 +1299,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">0,4%</td>
 <td class="num dim">—</td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">2</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">2</span></td>
 <td class="nom">Deposito <span class="eqtag">Otros</span></td>
 <td class="num">$4.500.000</td>
 <td class="num bold">$6.729.252</td>
@@ -1295,8 +1309,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">6,0%</td>
 <td class="num dim">—</td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆3</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod">🏆<span class="rn">3</span></td>
 <td class="nom">Sofia Cativiela <span class="eqtag">Flor</span></td>
 <td class="num">$97.300.000</td>
 <td class="num bold">$112.772.027</td>
@@ -1305,8 +1319,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,2%</td>
 <td class="num"><span class="bold pos">$100.000</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆4</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">4</span></td>
 <td class="nom">Kaf Romina Merello <span class="eqtag">Luci</span></td>
 <td class="num">$111.100.000</td>
 <td class="num bold">$126.126.038</td>
@@ -1315,8 +1329,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">5,0%</td>
 <td class="num"><span class="bold pos">$210.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆5</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">5</span></td>
 <td class="nom">Kaf Gaby Peralta <span class="eqtag">Luci</span></td>
 <td class="num">$85.900.000</td>
 <td class="num bold">$95.701.182</td>
@@ -1325,8 +1339,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">6,4%</td>
 <td class="num"><span class="bold pos">$210.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆6</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod">🏆<span class="rn">6</span></td>
 <td class="nom">Silvia Boutet <span class="eqtag">Juan</span></td>
 <td class="num">$78.700.000</td>
 <td class="num bold">$80.803.663</td>
@@ -1335,8 +1349,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,1%</td>
 <td class="num"><span class="bold pos">$100.000</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">7</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">7</span></td>
 <td class="nom">Vendedor 21 <span class="eqtag">Otros</span></td>
 <td class="num">$120.700.000</td>
 <td class="num bold">$122.600.429</td>
@@ -1345,8 +1359,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">15,9%</td>
 <td class="num dim">—</td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆8</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod">🏆<span class="rn">8</span></td>
 <td class="nom">Vendedor 28 Kaf <span class="eqtag">Luci</span></td>
 <td class="num">$11.000.000</td>
 <td class="num bold">$11.009.411</td>
@@ -1355,8 +1369,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">12,4%</td>
 <td class="num"><span class="bold pos">$200.000</span><span class="pnota">por volumen</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">🏆9</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod">🏆<span class="rn">9</span></td>
 <td class="nom">Magali Bader <span class="eqtag">Juan</span></td>
 <td class="num">$73.000.000</td>
 <td class="num bold">$73.007.452</td>
@@ -1365,8 +1379,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">18,6%</td>
 <td class="num"><span class="bold pos">$220.000</span></td>
 <td><span class="pill ok">Cumplió</span></td></tr>
-<tr>
-<td class="cod">10</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">10</span></td>
 <td class="nom">Ailen Blanco <span class="eqtag">Flor</span></td>
 <td class="num">$88.100.000</td>
 <td class="num bold">$87.205.754</td>
@@ -1375,8 +1389,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">18,2%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">11</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">11</span></td>
 <td class="nom">Angela Echeverria <span class="eqtag">Juan</span></td>
 <td class="num">$111.500.000</td>
 <td class="num bold">$110.032.948</td>
@@ -1385,8 +1399,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">15,6%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">12</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">12</span></td>
 <td class="nom">Valentina Gomez <span class="eqtag">Juan</span></td>
 <td class="num">$68.300.000</td>
 <td class="num bold">$66.670.303</td>
@@ -1395,8 +1409,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">18,1%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">13</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">13</span></td>
 <td class="nom">Lorena Escobar <span class="eqtag">Juan</span></td>
 <td class="num">$73.300.000</td>
 <td class="num bold">$69.115.335</td>
@@ -1405,8 +1419,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">18,2%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">14</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">14</span></td>
 <td class="nom">Guillermo Zeballos <span class="eqtag">Otros</span></td>
 <td class="num">$23.400.000</td>
 <td class="num bold">$21.737.451</td>
@@ -1415,8 +1429,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">16,0%</td>
 <td class="num dim">—</td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">15</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">15</span></td>
 <td class="nom">Samanta Machado <span class="eqtag">Juan</span></td>
 <td class="num">$87.100.000</td>
 <td class="num bold">$79.855.870</td>
@@ -1425,8 +1439,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold neg">15,1%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">16</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">16</span></td>
 <td class="nom">Fiama Jara <span class="eqtag">Juan</span></td>
 <td class="num">$101.800.000</td>
 <td class="num bold">$93.175.934</td>
@@ -1435,8 +1449,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">16,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">17</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">17</span></td>
 <td class="nom">Carolina Echeverria <span class="eqtag">Flor</span></td>
 <td class="num">$80.700.000</td>
 <td class="num bold">$73.008.134</td>
@@ -1445,8 +1459,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">18,4%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">18</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">18</span></td>
 <td class="nom">Sofia Aquino <span class="eqtag">Juan</span></td>
 <td class="num">$90.100.000</td>
 <td class="num bold">$81.419.730</td>
@@ -1455,8 +1469,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold amb">16,8%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">19</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">19</span></td>
 <td class="nom">Ivana Castillo <span class="eqtag">Flor</span></td>
 <td class="num">$77.100.000</td>
 <td class="num bold">$68.727.973</td>
@@ -1465,8 +1479,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,7%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">20</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">20</span></td>
 <td class="nom">Maria Victoria Zerda <span class="eqtag">Flor</span></td>
 <td class="num">$76.300.000</td>
 <td class="num bold">$67.241.416</td>
@@ -1475,8 +1489,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">18,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">21</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">21</span></td>
 <td class="nom">Pilar Fernandez <span class="eqtag">Juan</span></td>
 <td class="num">$75.100.000</td>
 <td class="num bold">$65.544.154</td>
@@ -1485,8 +1499,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,3%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">22</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">22</span></td>
 <td class="nom">Nahuel Baeta <span class="eqtag">Flor</span></td>
 <td class="num">$76.800.000</td>
 <td class="num bold">$66.179.886</td>
@@ -1495,8 +1509,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,9%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">23</td>
+<tr data-ceq="JUAN ARMANDOLA">
+<td class="cod"><span class="rn">23</span></td>
 <td class="nom">Rocio More <span class="eqtag">Juan</span></td>
 <td class="num">$83.300.000</td>
 <td class="num bold">$69.963.972</td>
@@ -1505,8 +1519,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,5%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">24</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod"><span class="rn">24</span></td>
 <td class="nom">Kaf Daniel Sanchez <span class="eqtag">Luci</span></td>
 <td class="num">$53.700.000</td>
 <td class="num bold">$44.705.222</td>
@@ -1515,8 +1529,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">6,0%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">25</td>
+<tr data-ceq="FLORENCIA LIBERA">
+<td class="cod"><span class="rn">25</span></td>
 <td class="nom">Natalia Polito <span class="eqtag">Flor</span></td>
 <td class="num">$77.100.000</td>
 <td class="num bold">$58.988.103</td>
@@ -1525,8 +1539,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold pos">17,9%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">26</td>
+<tr data-ceq="LUCIA CEJAS (KAF)">
+<td class="cod"><span class="rn">26</span></td>
 <td class="nom">Kaf Maria Jose Minio <span class="eqtag">Luci</span></td>
 <td class="num">$103.700.000</td>
 <td class="num bold">$77.812.468</td>
@@ -1535,8 +1549,8 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">6,8%</td>
 <td class="num"><span class="dim">—</span><span class="pnota">no llegó al objetivo</span></td>
 <td><span class="pill bad">No llegó</span></td></tr>
-<tr>
-<td class="cod">27</td>
+<tr data-ceq="SIN SUPERVISOR / OTROS">
+<td class="cod"><span class="rn">27</span></td>
 <td class="nom">Vendedor 30 <span class="eqtag">Otros</span></td>
 <td class="num">$1.800.000</td>
 <td class="num bold">$0</td>
@@ -1545,9 +1559,9 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <td class="num bold ">—</td>
 <td class="num dim">—</td>
 <td><span class="pill bad">No llegó</span></td></tr></tbody></table></div>
-<p class="aviso">La línea vertical marca el 100% del objetivo. Ganaron el premio: Magali Bader ($220.000, cumplimiento 100,0%, margen 18,6%) · Kaf Romina Merello ($210.000, cumplimiento 113,5%, por volumen) · Kaf Gaby Peralta ($210.000, cumplimiento 111,4%, por volumen) · Vendedor 28 Kaf ($200.000, cumplimiento 100,1%, por volumen) · Sofia Cativiela ($100.000, cumplimiento 115,9%, margen 17,2%) · Silvia Boutet ($100.000, cumplimiento 102,7%, margen 17,1%) — total $1.040.000. <strong>Para ver el detalle de lo vendido en septiembre (proveedor, cliente y artículo) tocá el nombre de la vendedora en las tablas por supervisor de abajo.</strong> El segmentador y el filtro por proveedor están en la vista de Noviembre.</p>
+<p class="aviso">La línea vertical marca el 100% del objetivo. <span id="sep-avp">Ganaron el premio: Magali Bader ($220.000, cumplimiento 100,0%, margen 18,6%) · Kaf Romina Merello ($210.000, cumplimiento 113,5%, por volumen) · Kaf Gaby Peralta ($210.000, cumplimiento 111,4%, por volumen) · Vendedor 28 Kaf ($200.000, cumplimiento 100,1%, por volumen) · Sofia Cativiela ($100.000, cumplimiento 115,9%, margen 17,2%) · Silvia Boutet ($100.000, cumplimiento 102,7%, margen 17,1%) — total $1.040.000.</span> <strong>Para ver el detalle de lo vendido en septiembre (proveedor, cliente y artículo) tocá el nombre de la vendedora en las tablas por supervisor de abajo.</strong> El filtro por proveedor está en la vista de Noviembre.</p>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="JUAN ARMANDOLA">
 <div class="eq-head"><h2>Juan Armandola</h2><span class="eq-nota">10 rutas · cód. 1-10</span><span class="eq-obj">$789.589.361 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1614,7 +1628,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Juan Armandola</td><td class="num obj">$842.200.000</td><td class="num">$789.589.361</td><td class="num bold ">93,8%</td><td class="num bold pos">17,0%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="FLORENCIA LIBERA">
 <div class="eq-head"><h2>Florencia Libera</h2><span class="eq-nota">7 rutas · cód. 31-35, 37, 38</span><span class="eq-obj">$534.123.293 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1663,7 +1677,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Florencia Libera</td><td class="num obj">$573.400.000</td><td class="num">$534.123.293</td><td class="num bold ">93,2%</td><td class="num bold pos">17,9%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="LUCIA CEJAS (KAF)">
 <div class="eq-head"><h2>Lucia Cejas (Kaf)</h2><span class="eq-nota">cuentas clave · cód. 24-28 · sin mayoristas regionales</span><span class="eq-obj">$355.354.321 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1700,7 +1714,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Lucia Cejas (Kaf)</td><td class="num obj">$365.400.000</td><td class="num">$355.354.321</td><td class="num bold ">97,3%</td><td class="num bold ">6,1%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="JOAQUIN (DUEÑO)">
 <div class="eq-head"><h2>Joaquin (Dueño)</h2><span class="eq-nota">subramo Mayoristas Regional · facturado vía KAF</span><span class="eq-obj">$470.104.319 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1713,7 +1727,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <tr class="subtot"><td></td><td>Total Joaquin (Dueño)</td><td class="num obj">$160.400.000</td><td class="num">$470.104.319</td><td class="num bold pos">293,1%</td><td class="num bold ">0,2%</td></tr>
 </tbody></table></div>
 </section>
-<section class="equipo">
+<section class="equipo" data-ceq="SIN SUPERVISOR / OTROS">
 <div class="eq-head"><h2>Sin Supervisor / Otros</h2><span class="eq-nota">depósito, mayorista y resto</span><span class="eq-obj">$589.636.924 <span style="font-size:12px;color:var(--ink2)">cierre</span></span></div>
 <div class="twrap"><table>
 <thead><tr><th></th><th>Vendedor</th><th class="num">Objetivo Sep-26</th><th class="num">Cierre Sep-26</th><th class="num">Cumplimiento</th><th class="num">Margen final</th></tr></thead>
@@ -1765,7 +1779,7 @@ td.obj{font-weight:700;color:var(--verde);background:var(--verde-soft)}
 <li><strong>Selector de mes:</strong> los botones de arriba de todo alternan entre el mes en curso (noviembre, con avance en vivo, segmentador, filtro por proveedor y desglose) y los cierres de octubre y septiembre (objetivo de cada mes, venta final, cumplimiento, margen y premios según las reglas de ese mes, con el mismo desglose por proveedor, cliente y artículo al tocar cada vendedora).</li>
 <li><strong>Filtro por proveedor:</strong> el selector de arriba muestra el tablero con la venta de un solo proveedor: ranking por venta, participación en la venta de cada vendedora, margen y tendencia de ese proveedor, combinable con los botones de equipo. El objetivo y el premio son del total del mes (no hay objetivo por proveedor), por eso en esa vista se ocultan.</li>
 </ul>
-<div class="gen">Actualizado el 10/11/2026, 10:56 · generado desde la base de Gescom</div>
+<div class="gen">Actualizado el 10/11/2026, 11:53 · generado desde la base de Gescom</div>
 </div>
 </div>
 <script>window.__SEG={"d":{"TODOS":{"obj":3134570490.7081714,"sep":2889723333.8318753,"venta":971177868.4917258,"n":802626337.5964677,"c":727324888.7736869,"pn":397851978.615749,"pc":331172880.0394965,"npv":17,"nv":27,"nom":"del equipo"},"JUAN ARMANDOLA":{"obj":961500000,"sep":860598857.9488668,"venta":282258068.73460495,"n":233271131.18562397,"c":195007748.27264044,"pn":233271131.18562397,"pc":195007748.27264044,"npv":10,"nv":10,"nom":"de Juan"},"FLORENCIA LIBERA":{"obj":698000000,"sep":625501593.0988495,"venta":199142825.39045128,"n":164580847.43012497,"c":136165131.766856,"pn":164580847.43012497,"pc":136165131.766856,"npv":7,"nv":7,"nom":"de Flor"},"LUCIA CEJAS (KAF)":{"obj":500000000,"sep":428552392.07598746,"venta":166807138.64131635,"n":137857139.3729886,"c":133774671.29455557,"pn":0,"pc":0,"npv":0,"nv":5,"nom":"de Luci"},"JOAQUIN (DUEÑO)":{"obj":377873225.96242994,"sep":377873225.96242994,"venta":167780365.66249198,"n":138661459.22520003,"c":138928870.60999998,"pn":0,"pc":0,"npv":0,"nv":1,"nom":"de Joaco"},"SIN SUPERVISOR / OTROS":{"obj":597197264.7457416,"sep":597197264.7457416,"venta":155189470.0628613,"n":128255760.38253,"c":123448466.82963492,"pn":0,"pc":0,"npv":0,"nv":4,"nom":"de los canales sin supervisor"}},"ht":21,"htr":7,"mgMin":0.145,"mgLbl":"14,5","hayAv":true,"eqs":["JUAN ARMANDOLA","FLORENCIA LIBERA","LUCIA CEJAS (KAF)","JOAQUIN (DUEÑO)","SIN SUPERVISOR / OTROS"],"lbl":{"JUAN ARMANDOLA":"Juan","FLORENCIA LIBERA":"Flor","LUCIA CEJAS (KAF)":"Luci","JOAQUIN (DUEÑO)":"Joaco","SIN SUPERVISOR / OTROS":"Sin supervisor"}};</script>
@@ -2219,7 +2233,7 @@ function hojaVista(X,v){
  var aoa=[], h1=document.getElementById('h1-mes');
  aoa.push([(h1?h1.textContent:'Objetivo')+' — exportado el '+new Date().toLocaleString('es-AR')]);
  var filtros=[];
- var seg=document.querySelectorAll('#seg .segb[aria-pressed="true"]'); if(v.mes==='nov'&&seg.length) filtros.push('Equipo: '+Array.prototype.map.call(seg,function(b){return b.textContent.trim();}).join(', '));
+ var seg=document.querySelectorAll((v.mes==='nov'?'#seg':'#'+v.mes+'-seg')+' .segb[aria-pressed="true"]'); if(seg.length) filtros.push('Equipo: '+Array.prototype.map.call(seg,function(b){return b.textContent.trim();}).join(', '));
  var pv=document.getElementById('pvsel'); if(v.mes==='nov'&&pv&&pv.value) filtros.push('Proveedor: '+pv.options[pv.selectedIndex].text.split(' — ')[0]);
  if(filtros.length) aoa.push([filtros.join(' · ')]);
  var kp=v.el.querySelectorAll('.kpi');
@@ -2279,6 +2293,86 @@ btn.addEventListener('click',function(){
   });
  }).catch(function(e){aviso('No se pudo generar el Excel: '+e.message);})
  .then(function(){btn.disabled=false;});
+});
+})();
+</script>
+<script>
+// segmentador de supervisor de los meses cerrados (octubre / septiembre): suma los agregados por equipo
+(function(){
+var C=window.__CIE||{};
+function pl(n,d){return n.toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d});}
+function M(n){return '$'+pl(Math.round(n),0);}
+function P0(n){return pl(n*100,1)+'%';}
+function fMg(m){return m==null?'—':pl(Math.floor(Number((m*1000).toFixed(6)))/10,1)+'%';}
+Object.keys(C).forEach(function(K){
+ var S=C[K], seg=document.getElementById(K+'-seg'); if(!seg) return;
+ var root=document.getElementById(K==='oct'?'vista-oct':'vista-sep'); if(!root) return;
+ var IDS=['k1l','k1v','k1n','k2v','k3v','k3n','k4l','k4v','k4n','k5v','k5n','fn','f0','f1','f2','avp'];
+ var orig={};
+ IDS.forEach(function(i){var e=document.getElementById(K+'-'+i); if(e) orig[i]={h:e.innerHTML,c:e.className};});
+ function el(i){return document.getElementById(K+'-'+i);}
+ function t(i,s){var e=el(i); if(e) e.textContent=s;}
+ function vd(i,on){var e=el(i); if(e) e.classList.toggle('verde',!!on);}
+ var KEY='objcierre-'+K+'-eq', cur=S.eqs.slice();
+ function orden(a){return S.eqs.filter(function(k){return a.indexOf(k)>=0;});}
+ function apply(sel){
+  var todos=sel.length===S.eqs.length, uno=sel.length===1;
+  if(todos){
+   IDS.forEach(function(i){var e=el(i); if(e&&orig[i]){e.innerHTML=orig[i].h;e.className=orig[i].c;}});
+  } else {
+   var d={obj:0,vv:0,base:0,n:0,c:0,pn:0,pc:0,npv:0,nv:0,prem:0,pl:[]};
+   sel.forEach(function(k){var a=S.d[k]; if(!a) return;
+    ['obj','vv','base','n','c','pn','pc','npv','nv','prem'].forEach(function(f){d[f]+=a[f];});
+    d.pl=d.pl.concat(a.pl);});
+   d.pl.sort(function(a,b){return b.m-a.m;});
+   var nom='de '+sel.map(function(k){return S.lbl[k]||k;}).join(' + ');
+   t('k1l',uno?'Objetivo del equipo':'Objetivo de los equipos');
+   t('k1v',M(d.obj));
+   t('k1n',d.nv+(d.nv===1?' vendedor':' vendedores')+' · '+nom);
+   t('k2v',M(d.vv));
+   t('k3v',P0(d.obj?d.vv/d.obj:0)); vd('k3v',d.vv>=d.obj);
+   var dif=d.vv-d.obj; t('k3n',M(Math.abs(dif))+(dif>=0?' por encima':' por debajo')+' del objetivo');
+   var pv=d.npv>0, mn=pv?d.pn:d.n, mc=pv?d.pc:d.c, mg=mn?(mn-mc)/mn:null;
+   t('k4l',pv?'Margen preventa final':'Margen final del equipo');
+   t('k4v',fMg(mg)); vd('k4v',pv&&mg!=null&&mg>=S.piso);
+   t('k4n',pv?(d.npv+' rutas · piso del premio: '+S.pisoLbl):'sin rutas de preventa · el margen no es condición del premio');
+   t('k5v',M(d.prem));
+   t('k5n',d.pl.length?d.pl.map(function(x){return x.s;}).join(' · '):'nadie de la selección ganó premio');
+   var fn=el('fn'); if(fn&&orig.fn) fn.textContent=orig.fn.h.replace(' del equipo',' '+nom);
+   t('f0',M(d.base)); t('f1',d.base?pl(d.obj/d.base,2):'—'); t('f2',M(d.obj));
+   t('avp',d.pl.length?'Ganaron el premio: '+d.pl.map(function(x){return x.t;}).join(' · ')+' — total '+M(d.prem)+'.':'Nadie de la selección ganó premio.');
+  }
+  root.querySelectorAll('section[data-ceq]').forEach(function(s){s.hidden=!todos&&sel.indexOf(s.getAttribute('data-ceq'))<0;});
+  var rk=el('rank'), vis=0;
+  if(rk){
+   rk.querySelectorAll('tbody tr[data-ceq]').forEach(function(tr){
+    var ok=todos||sel.indexOf(tr.getAttribute('data-ceq'))>=0;
+    tr.hidden=!ok; if(ok){vis++;var n=tr.querySelector('.rn'); if(n) n.textContent=vis;}
+   });
+   rk.hidden=(vis===0); // Joaquín no entra en el ranking del premio
+   rk.classList.toggle('one-eq',uno);
+  }
+  seg.querySelectorAll('.segb').forEach(function(b){
+   var bk=b.getAttribute('data-k');
+   b.setAttribute('aria-pressed',(bk==='TODOS'?todos:(!todos&&sel.indexOf(bk)>=0))?'true':'false');
+  });
+  cur=sel;
+  try{localStorage.setItem(KEY,JSON.stringify(sel));}catch(e){}
+ }
+ seg.addEventListener('click',function(e){
+  var b=e.target.closest?e.target.closest('.segb'):null; if(!b) return;
+  var k=b.getAttribute('data-k'), sel;
+  if(k==='TODOS') sel=S.eqs.slice();
+  else if(cur.length===S.eqs.length) sel=[k];
+  else if(cur.indexOf(k)>=0) sel=cur.filter(function(x){return x!==k;});
+  else sel=orden(cur.concat([k]));
+  if(!sel.length) sel=S.eqs.slice();
+  apply(sel);
+ });
+ try{
+  var g=JSON.parse(localStorage.getItem(KEY)||'null');
+  if(g&&g.length){var f=orden(g); if(f.length&&f.length!==S.eqs.length) apply(f);}
+ }catch(e){}
 });
 })();
 </script>
